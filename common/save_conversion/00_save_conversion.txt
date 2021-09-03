@@ -1,0 +1,7 @@
+religions = {
+	#
+}
+
+societies = {
+	#
+}

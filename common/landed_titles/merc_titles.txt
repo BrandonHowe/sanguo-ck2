@@ -1,0 +1,676 @@
+# Mercenary
+
+d_guard={
+	color={ 210 120 120 }
+	color2={ 255 255 255 }
+	
+	capital=1 #Henan
+	
+	culture=han
+	religion=confucian
+	
+	dignity=10
+
+	landless=yes
+	
+	primary=yes
+	
+	mercenary=yes
+
+	allow={
+		has_landed_title=k_confucian
+	}
+
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	short_name=yes
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=imperial_guard_composition
+}
+
+d_baibo={
+	color={ 255 255 25 }
+	color2={ 255 255 255 }
+	
+	capital=14 # Yang
+	
+	culture=han
+	religion=confucian
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+
+	allow={
+		OR={
+			year=195
+			d_white={
+				has_holder=no
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=han_mid_composition
+}
+
+d_baima={
+	color={ 0 0 0 }
+	color2={ 255 255 255 }
+	
+	capital=307 #Zhuo
+	
+	culture=han
+	religion=confucian
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+
+	allow={
+		any_realm_province={ region=world_china_you }
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=baima_composition
+}
+
+d_feather={
+	color={ 255 179 33 }
+	color2={ 255 255 255 }
+	
+	capital=266 #Linjiang
+	
+	culture=bandunman
+	religion=baihu
+	
+	dignity=10
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_jing
+				region=world_china_yi
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=feather_composition
+}
+
+#Huo
+d_huo={
+	color={ 210 37 27 }
+	color2={ 255 255 255 }
+	
+	capital=144 # c_jiangling
+	
+	culture=han
+	religion=confucian
+	
+	dignity=10
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+
+	allow={
+		year=194
+		any_realm_province={
+			OR={
+				region=world_china_jing
+				region=world_china_sili
+				region=world_china_yang
+				region=world_china_yi
+				region=world_china_yu
+			}
+		}
+	}
+	
+	title="LORD"
+	title_female="LADY"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=han_low_composition
+}
+
+#Lu Bu
+d_lubu={
+	color={ 245 145 145 }
+	color2={ 255 255 255 }
+	
+	capital=213 #Puyang
+	
+	culture=han
+	religion=confucian
+	
+	dignity=10
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+
+	allow={
+		year=192
+		top_liege={
+			primary_title={
+				NOT={ has_title_flag=premier_title }
+			}
+		}
+		any_realm_province={
+			OR={
+				region=world_china_bing
+				region=world_china_ji
+				region=world_china_qing
+				region=world_china_sili
+				region=world_china_xu
+				region=world_china_yan
+				region=world_china_yu
+			}
+		}
+	}
+	
+	title="LORD"
+	title_female="LADY"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=liang_composition
+}
+
+d_qingzhou={
+	color={ 255 255 25 }
+	color2={ 255 255 255 }
+	
+	capital=187 #Zhoua
+	
+	culture=han
+	religion=taiping
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+
+	allow={
+		OR={
+			year=193
+			k_yellow={
+				has_holder=no
+			}
+		}
+		any_realm_province={
+			OR={
+				region=world_china_ji
+				region=world_china_qing
+				region=world_china_yan
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=yellow_composition
+}
+
+#Independent
+
+d_bashu={
+	color={ 90 180 85 }
+	color2={ 255 255 255 }
+	
+	capital=257 #Chengdu
+	
+	culture=han
+	religion=confucian
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={ region=world_china_yi }
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=bashu_composition
+}
+
+d_wuxia={
+	color={ 125 25 15 }
+	color2={ 255 255 255 }
+	
+	capital=248 #Lujiang
+	
+	culture=han
+	religion=confucian
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_jing
+				region=world_china_yang
+				region=world_china_yu
+				region=world_china_xu
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=wuxia_composition
+}
+
+d_zhongyuan={
+	color={ 165 215 225 }
+	color2={ 255 255 255 }
+	
+	capital=1 #c_henan
+	
+	culture=han
+	religion=confucian
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_ji
+				region=world_china_qing
+				region=world_china_sili
+				region=world_china_xu
+				region=world_china_yan
+				region=world_china_yu
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=zhongyuan_composition
+}
+
+d_samhan={
+	color={ 23 155 225 }
+	color2={ 255 255 255 }
+	
+	capital=379 # c_baekje
+	
+	culture=samhan
+	religion=shamanist
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_you
+				region=world_korea
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=samhan_composition
+}
+
+d_minyue={
+	color={ 235 98 233 }
+	color2={ 255 255 255 }
+	
+	capital=252 #Nanchang
+	
+	culture=minyue
+	religion=animist
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_jing
+				region=world_china_yang
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=zealots_composition
+}
+
+d_nanman={
+	color={ 104 188 80 }
+	color2={ 255 255 255 }
+	
+	capital=284 #c_jianning
+	
+	culture=nanman
+	religion=huojiao
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={ region=world_china_yi }
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=zealots_composition
+}
+
+d_nanyue={
+	color={ 145 67 88 }
+	color2={ 255 255 255 }
+	
+	capital=117 #Zhuwu
+	
+	culture=nanyue
+	religion=animist
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={
+			region=world_china_jiao
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=south_company_composition
+}
+
+d_qiang={
+	color={ 190 240 185 }
+	color2={ 255 255 255 }
+	
+	capital=362 #Qinghaidong
+	
+	culture=qiang
+	religion=baishi
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={
+			OR={
+				region=world_central_asia
+				region=world_china_liang
+				region=world_tibet
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=qiang_composition
+}
+
+d_shanyue={
+	color={ 245 118 84 }
+	color2={ 255 255 255 }
+	
+	capital=253 #Poyang
+	
+	culture=shanyue
+	religion=animist
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_jing
+				region=world_china_yang
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=zealots_composition
+}
+
+d_wuhuan={
+	color={ 178 152 63 }
+	color2={ 255 255 255 }
+	
+	capital=375 #c_wuhuandong
+	
+	culture=wuhuan
+	religion=tengri_pagan
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_bing
+				region=world_china_ji
+				region=world_china_you
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=wuhuan_composition
+}
+
+d_xianbei={
+	color={ 162 84 25 }
+	color2={ 255 255 255 }
+	
+	capital=364 # c_murong
+
+	culture=xianbei
+	religion=tengri_pagan
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_bing
+				region=world_china_ji
+				region=world_china_liang
+				region=world_china_you
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=xianbei_composition
+}
+
+d_xiongnu={
+	color={ 142 226 44 }
+	color2={ 255 255 255 }
+		
+	capital=373 # c_xiongnudong
+
+	culture=xiongnu
+	religion=tengri_pagan
+
+	landless=yes
+	
+	primary=yes
+	short_name=yes
+	
+	mercenary=yes
+	
+	independent=yes
+	
+	allow={
+		any_realm_province={
+			OR={
+				region=world_china_bing
+				region=world_china_ji
+				region=world_china_liang
+				region=world_china_sili
+				region=world_china_you
+			}
+		}
+	}
+	
+	title="CAPTAIN"
+	foa="CAPTAIN_FOA"
+	
+	strength_growth_per_century=1.0
+	
+	mercenary_type=xiongnu_composition
+}

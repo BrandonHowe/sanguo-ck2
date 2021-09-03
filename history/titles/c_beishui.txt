@@ -1,0 +1,17 @@
+# e_china
+1.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1.1.1={
+	liege=d_yuexi
+}
+184.1.1={
+	holder=1825 #Yuan Yue
+}
+222.1.1={
+	liege=k_man
+}
+225.10.1={
+	liege=d_yuexi
+}

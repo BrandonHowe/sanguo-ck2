@@ -1,0 +1,21 @@
+# c_xupu
+
+# County Title
+title = c_xupu
+
+# Settlements
+max_settlements = 3
+
+b_xupu = castle
+b_banling = city
+#b_nansan = castle
+
+# Misc
+culture = nanyue
+religion = animist
+terrain = plains
+
+#History
+200.1.1={
+	b_banling = city
+}

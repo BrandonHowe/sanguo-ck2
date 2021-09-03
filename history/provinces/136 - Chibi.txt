@@ -1,0 +1,21 @@
+# c_chibi
+
+# County Title
+title = c_chibi
+
+# Settlements
+max_settlements = 3
+
+b_chibi = castle
+#b_dianmo = city
+#b_luzhong = temple
+
+# Misc
+culture = shanyue
+religion = animist
+terrain = hills
+
+#History
+214.1.1={
+	b_dianmo = city
+}

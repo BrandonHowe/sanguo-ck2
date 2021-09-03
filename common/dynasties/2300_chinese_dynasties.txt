@@ -1,0 +1,84 @@
+2300={
+	name="Wang" # Wang Chang - Wei
+	culture=han
+	used_for_random=no
+	coat_of_arms=
+	{
+		data=
+		{
+0 2 0 5 0 0 0 			}
+		religion="confucian"
+	}
+}
+2301={
+	name="He" # He Yan - Wei
+	culture=han
+	used_for_random=no
+	coat_of_arms=
+	{
+		data=
+		{
+0 2 0 5 0 0 0 			}
+		religion="confucian"
+	}
+}
+2302={
+	name="Huang" # Huang Hao - Shu
+	culture=han
+	used_for_random=no
+	coat_of_arms=
+	{
+		data=
+		{
+0 2 0 5 0 0 0 			}
+		religion="confucian"
+	}
+}
+2303={
+	name="Fei" # Fei Yi - Shu
+	culture=han
+	used_for_random=no
+	coat_of_arms=
+	{
+		data=
+		{
+0 2 0 5 0 0 0 			}
+		religion="confucian"
+	}
+}
+2304={
+	name="Guo" # Guo Huai - Wei
+	culture=han
+	used_for_random=no
+	coat_of_arms=
+	{
+		data=
+		{
+0 2 0 5 0 0 0 			}
+		religion="confucian"
+	}
+}
+2305={
+	name="Li" # Li Sheng - Wei
+	culture=han
+	used_for_random=no
+	coat_of_arms=
+	{
+		data=
+		{
+0 2 0 5 0 0 0 			}
+		religion="confucian"
+	}
+}
+2306={
+	name="Chen" # Chen Zhi - Shu
+	culture=han
+	used_for_random=no
+	coat_of_arms=
+	{
+		data=
+		{
+0 2 0 5 0 0 0 			}
+		religion="confucian"
+	}
+}

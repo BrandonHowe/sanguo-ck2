@@ -1,0 +1,28 @@
+# e_china
+1.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1.1.1={
+	liege=d_ba
+}
+50.1.1={
+	holder=3753 #Cao Min
+}
+60.1.1={
+	holder=0 #None
+}
+184.1.1={
+	holder=4494 #Mo Si
+}
+196.1.1={
+	liege=d_badong
+	holder=3630 #Zhang Yi
+}
+201.6.1={
+	liege=d_hanzhong
+	holder=1824 #Pu Hu
+}
+219.5.1={
+	liege=d_badong
+}

@@ -1,0 +1,19 @@
+# e_china
+1.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1.1.1={
+	liege=d_zhuti
+}
+184.1.1={
+	holder=1800 #Shamoke
+}
+214.1.1={
+	holder=1803 #Gao Ding
+}
+#225.9.1={
+#	holder=0 #None
+#}
+
+#TBD

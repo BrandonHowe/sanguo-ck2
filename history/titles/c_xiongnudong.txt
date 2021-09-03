@@ -1,0 +1,19 @@
+# k_northern
+1.1.1={
+	historical_nomad = yes
+}
+1.1.1={
+	liege=d_xiongnunan
+}
+184.1.1={
+	holder=1500 #Qiangqui
+}
+188.1.1={
+	holder=1504 #Gudu
+}
+189.9.1={
+	holder=1505 #Huchuquan
+}
+216.1.1={
+	holder=1523 #Liu Bao
+}

@@ -1,0 +1,21 @@
+# c_bushan
+
+# County Title
+title = c_bushan
+
+# Settlements
+max_settlements = 3
+
+b_bushan = tribal
+#b_fongsha = city
+#b_lintouzhen = temple
+
+# Misc
+culture = nanyue
+religion = animist
+terrain = plains
+
+#History
+211.1.1={
+	b_bushan=castle
+}

@@ -1,0 +1,145 @@
+japanese = {
+	graphical_cultures = { japanesegfx easterngfx }
+
+	wa = {
+		graphical_cultures = { japanesegfx easterngfx }
+		
+		color = { 0.15 0.15 0.15 }
+		
+		dynasty_name_first = yes
+		
+		male_names = {
+			Abiko Abo Akae Akechi Aki Akio Akira
+			Akihito Amahisa Aoi Anaho Anko Annei
+			Arata Asahi Asazuma Atori Awakatsu
+			Ayumu
+			Bidatsu Buretsu
+			Chisato Chuai
+			Daichi Daiki Daisuke
+			Eiji Emishi
+			Fuhito Futoni Futsukuru
+			Genma Goro
+			Hanzei Haru Haruki Haruma Haruto
+			Hatayasu Hayato Hikami Himuka
+			Hinata Hisashi Hito Hitoshi Hoshi
+			Hoshikawa Hotaru
+			Ibuki Ichigo Ichiro Ieyasu Igotohiko
+			Ihoki Ikofutsu Ikoto Ikui Ikume Iname
+			Inari Ingyo Inie Inishiki Irihiko Iruka
+			Isachi Isaho Ishikawa Itoku Itsuki
+			Iwamochi Iwarebiko
+			Jimmu Jinichi Jiro Junda Juro
+			Kaeshine Kagami Kaiba Kaika Kaito
+			Kamako Kamatari Kanamura Kara Karako
+			Katsuhiro Kawakatsu Kazuraki Keiko
+			Keitai Kinmei Kiyotari Koan Kobun Kogen
+			Koma Korei Kosho Kosuke Kota Kuni
+			Kunichiwake Kunioshi Kunisiwake Kura
+			Kuramaro Kuroda Kuru Kusama
+			Machi Mahito Makoto Makura Maroko
+			Masashige Masashiro Mawaka Me Minato
+			Minu Mochiyuki Moriya Moroe Motoi
+			Motokato Mubaragi Mukiri Murajiko
+			Muruya Musashi
+			Naka Nakajima Nakatsuhiko Nekohiko Nieko Nintoku Nobu
+			O Oama Oba Ojin Okoshi Omae Osabe Oshi
+			Osu Oto Otomo Otondo Ototsugu Oyama
+			Ren Reo Richu Riku Ryo Ryusei
+			Sai Sasuke Satehiko Sawara Sazaki
+			Seimu Seinei Senka Shikahito
+			Shikimaru Shima Shino Shioyaki
+			Shirakabe Shirikawa Shota Shotoku
+			Sora Sosuke Sota Sotsuhiko Sugiyama
+			Suinin Suizei Sujin Sukitomo Sumitomo
+			Suzaku
+			Takagi Takashi Takeru Takesuke Tamada
+			Tamademi Tamura Tarasi Tarasihiko Tasa
+			Tatsu Tatsuki Teika Tochine Tokibumi
+			Tokiwa Tomonori Toshi Toudou Toyasu
+			Toyokuniwake Toyotomi Toyotowake Tsurayuki
+			Ujiyasu Umako Umaraki Unara Ushiro
+			Waka Wakanuke Wake Wakugo
+			Yahiko Yamabe Yamashiro Yashiro
+			Yasumaro Yokota Yomei Yoshi Yoshimochi
+			Yoshitori Yoshitoshi Yukihira
+			Zenichi Zenko Zentoko 
+		}
+		female_names = {
+			Aguchi Ai Aika Aiko Aimi Aina Ainu
+			Airi Aiya Akahana Akane Akari Akemi
+			Aki Akiara Akiko Akira Akito Amaterasu
+			Ami Aneko Aoi Arisu Asa Asami Asuga
+			Asomi Asuka Atsuko Aya Ayaka Ayako
+			Ayame Ayane Ayano Ayumi Azumi
+			Bashira Botan
+			Chiaki Chiasa Chie Chieko Chiaru
+			Chihiro Chika Chikako Chinami Chinatsu
+			Chiyo Chiyoko Chizue Cho Chouko Chuya
+			Dai Danuja Den Doi
+			Eiko Emi Emica Emiko Ena Eri Eshima
+			Etsu Etsudo Etsuko
+			Fuji Fujiko Fumiko Furihime Fuwa Fuyuko
+			Gen Genmei Genmyo Gensho Gina
+			Hachi Haia Hana Hanae Hanako Hanami
+			Haru Harue Haruhi Haruka Haruki
+			Haruko Harumi Haruna Haruno Hashihito
+			Hatsu Hatsuko Hatsumomo Haya Hayami
+			Hekima Hibiki Hide Hideko Hikage
+			Hikari Hikaru Himari Himiko Hina
+			Hinata Hiriko Hiro Hirohime Hiroko
+			Hiromi Hisa Hisako Hitomi Hiyori
+			Homura Honoka Hoshi Hoshiko Hotaru
+			Humiya
+			Ichika Igotohime Iku Ikumi Ima Ino
+			Inoe Iratsume Isamu Ishihime Ito Iwa
+			Iwakumahime Izanami Izumi
+			Japana Jin Jingu Jito Jona Jun Junko
+			Kaede Kagami Kagehime Kagome Kaguya
+			Kaho Kaida Kairi Kairy Kaiya Kaiyo
+			Kama Kamiko Kana Kanon Kaori Karahime
+			Kasanui Kasuga Kasumi Kata Katana
+			Katano Katsu Katsuki Katsumi Kayda
+			Kayo Kazane Kazashi Kazue Kazuko
+			Kazumi Kehime Kei Keiko Keina Keomi
+			Kiaria Kibitsuhime Kichi Kiko Kimi
+			Kimika Kimmi Kin Kioka Kioko Kirika
+			Kishi Kita Kitashihime Kitiara Kiwa
+			Kiyoko Kiyomi Ko Koemi Koge Kogyoku
+			Kohaku Kohana Koharu Koken Komyoshi
+			Koko Kokoro Kosuke Koto Kotone
+			Kozakura Kozue Kukiko Kuma Kumi
+			Kumiko Kura Kuri Kusu Kyo Kyoko
+			Machi Machiko Madoka Maho Mei
+			Michiko Michiyo Miko Mimiko Minamiko
+			Mio Misaki Miyu Momoka Moro Motoko
+			Nana Nanami Natsuki Niigasa Niko
+			Nukako Nukata
+			Oanegimi Ohotomo Ohoyake Okinaga Otohime
+			Reina Ria Rin Rina Rio Ruka
+			Saimei Sakahito Saki Sakura Sana Sara
+			Shiori Suki Suiko
+			Tahino Tamayori Tarashihime Tashiraka
+			Tochi Toneri Toyotama
+			Wakahime Wayakahime
+			Yakiko Yamatohime Yoko Yorozu Yui Yume
+			Yumi Yuna
+		}
+		
+		founder_named_dynasties = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 0
+		mat_grf_name_chance = 0
+		father_name_chance = 0
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 0
+		mat_grm_name_chance = 0
+		mother_name_chance = 0
+
+		modifier = default_culture_modifier
+		
+		allow_looting = yes
+		seafarer = yes
+	}
+}

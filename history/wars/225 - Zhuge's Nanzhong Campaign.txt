@@ -1,0 +1,27 @@
+name = "Zhuge's Nanzhong Campaign"
+
+casus_belli={
+	actor=610
+	recipient=1801
+	casus_belli=invasion
+	landed_title=k_man
+	date=225.8.1
+}
+
+225.8.1 = {
+	add_defender = 1801 #Meng Huo
+	add_defender = 1803 #Gao Ding
+	add_defender = 1805 #Zhu Bao
+	add_attacker = 610 #Liu Shan
+	add_attacker = 615 #Zhuge Liang
+}
+
+225.10.1 = {
+	rem_defender = 1805 #Zhu Bao
+	rem_defender = 1803 #Gao Ding
+	rem_defender = 1801 #Meng Huo
+	add_attacker = 615 #Zhuge Liang
+	add_attacker = 610 #Liu Shan
+}
+
+   

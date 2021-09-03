@@ -1,0 +1,206 @@
+# Religion-specific opinion can be added to modifiers (E.G., norse_pagan_opinion = 5), but the modifier *has* to be defined in 00_modifier_definitions.txt as well. It also needs localisation. Works for groups as well
+
+# join_crusade_if_bordering_hostile = yes # The AI won't refrain from joining a crusade simply because it borders a heathen/heretic realm
+
+# This trigger defines who can see a character's secret religion. The character with the secret religion is FROM, while the viewer is ROOT
+# Characters can always see their own secret religion. The observer can see all secret religions
+secret_religion_visibility_trigger = {
+	secret_religion = FROM
+}
+
+chinese_religion = {
+	graphical_culture = indiangfx
+	has_coa_on_barony_only = yes
+    crusade_cb = crusade
+	playable = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	hostile_within_group = yes
+	
+	color = { 1.0 0.0 0.0 }
+
+	ai_convert_same_group = 1 # try to convert if ai_zeal is high
+	ai_convert_other_group = 1	# always try to convert
+
+	confucian = {
+		graphical_culture = chinesesgfx
+		secondary_event_pictures = sunni
+
+		icon = 114
+		heresy_icon = 113
+
+		color = { 0.9 0.7 0.0 }
+		
+		crusade_name = IMPERIAL_DECREE
+		scripture_name = HEAVEN_MANDATE
+		priest_title = SCHOLAR
+		
+		high_god_name = HEAVEN
+		
+		god_names = {
+			HEAVEN
+		}
+		
+#		evil_god_names = {
+#			SATAN
+#		}
+		
+		has_heir_designation = yes
+		can_have_antipopes = yes
+		can_excommunicate = yes
+		priests_can_marry = yes
+		allow_looting = yes
+		allow_rivermovement = yes
+		landed_kin_prestige_bonus = yes
+		can_grant_invasion_cb = invasion
+		can_grant_claim = yes
+		can_call_crusade = yes
+		peace_piety_gain = 1.5
+		max_consorts = 3
+		matrilineal_marriages = no
+		
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 2
+		
+		aggression = 2.5
+	}
+
+	folk = {
+		graphical_culture = chinesesgfx
+		secondary_event_pictures = sunni
+
+		icon = 113
+
+		color = { 0.4 0.4 0.4 }
+
+		priests_can_marry = yes
+		allow_looting = yes
+		allow_rivermovement = yes
+		landed_kin_prestige_bonus = yes
+		max_consorts = 3
+		matrilineal_marriages = yes
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 2
+		
+		aggression = 5.0
+		
+		parent = confucian
+	}
+
+	legal = {
+		graphical_culture = chinesesgfx
+		secondary_event_pictures = sunni
+
+		icon = 113
+
+		color = { 0.4 0.4 0.4 }
+
+		priest_title = SCHOLAR
+		
+		can_excommunicate = yes
+		priests_can_marry = yes
+		allow_looting = yes
+		allow_rivermovement = yes
+		landed_kin_prestige_bonus = yes
+		can_grant_invasion_cb = invasion
+		max_consorts = 3
+		dislike_tribal_organization = yes
+		matrilineal_marriages = no
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 2
+		
+		aggression = 2.5
+		
+		hard_to_convert = yes
+		
+		parent = confucian
+	}
+}
+
+
+
+tao = {
+	graphical_culture = indiangfx
+	has_coa_on_barony_only = yes
+    crusade_cb = crusade
+	playable = yes
+	ai_peaceful = yes # Will make Hordes lose their super aggressiveness
+	hostile_within_group = yes
+		
+	color = { 226 241 182 }
+
+	ai_convert_same_group = 1 # try to convert if ai_zeal is high
+	ai_convert_other_group = 2	# never try to convert
+	
+	tianshi = { #Celestial Masters
+		graphical_culture = chinesesgfx
+		secondary_event_pictures = sunni
+
+		icon = 111
+
+		color = { 0.1 0.1 0.4 }
+		
+		priest_title = MASTER
+
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		max_consorts = 3
+		allow_looting = yes
+		allow_rivermovement = yes
+		can_grant_claim = yes
+		matrilineal_marriages = no
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 7
+		
+		hard_to_convert = yes
+	}
+
+	taiping = { #Way of Peace
+		graphical_culture = chinesesgfx
+		secondary_event_pictures = sunni
+
+		icon = 111
+
+		color = { 0.4 0.1 0.1 }
+		
+		crusade_name = WAY_OF_PEACE
+		scripture_name = TAIPINGJING
+		priest_title = MASTER
+		
+		high_god_name = ZHONGHUANG
+		
+		god_names = {
+			HUANGLAO ZHONGHUANG
+		}
+		
+		has_heir_designation = yes
+		can_grant_divorce = yes
+		priests_can_inherit = yes
+		priests_can_marry = yes
+		max_consorts = 3
+		allow_looting = yes
+		allow_rivermovement = yes
+		can_grant_claim = yes
+		can_call_crusade = yes
+		matrilineal_marriages = no
+
+		short_reign_opinion_year_mult = 0 # No short reign penalty
+
+		religious_clothing_head = 0
+		religious_clothing_priest = 7
+		
+		aggression = 2.5
+	}
+}

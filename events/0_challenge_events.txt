@@ -1,0 +1,507 @@
+namespace = challenge
+
+#Battle!
+character_event = {
+	id = challenge.1
+	desc = "EVTDESC_challenge.1"
+	picture = "GFX_evt_duel"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {# Challenge accepted
+		name = "OK"
+		
+		ROOT = { morale = 0.1 }
+		
+		FROM = {
+			character_event = {
+				id = challenge.4
+			}
+		}
+		
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				lower_tier_than = FROM
+			}
+			modifier = {
+				factor = 0.5
+				higher_tier_than = FROM
+			}
+			modifier = {
+				factor = 0.85
+				age = 40
+			}
+			modifier = {
+				factor = 0.85
+				age = 50
+			}
+			modifier = {
+				factor = 0.85
+				age = 60
+			}
+			modifier = {
+				factor = 0.4
+				tier = BARON
+			}
+			modifier = {
+				factor = 0.2
+				tier = COUNT
+			}
+			modifier = {
+				factor = 0.1
+				tier = DUKE
+			}
+			modifier = {
+				factor = 0.05
+				tier = KING
+			}
+			modifier = {
+				factor = 0
+				tier = EMPEROR
+			}
+			modifier = {
+				factor = 0.5
+				trait = destined
+				NOR = { 
+					trait = fate_duel
+					trait = duelist
+				}
+			}
+			modifier = {
+				factor = 0.1
+				trait = back_seat_leader
+			}
+			modifier = {
+				factor = 3
+				trait = fate_duel
+			}
+			modifier = {
+				factor = 5
+				trait = berserker
+			}
+			modifier = {
+				factor = 1.5
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				is_strong_trigger = yes
+			}
+			modifier = {
+				factor = 1.5
+				trait = tall
+			}
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					trait = infirm
+					trait = blinded
+				}
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				is_maimed_trigger = yes
+			}
+			modifier = {
+				factor = 0.1
+				trait = wounded
+			}
+			modifier = {
+				factor = 0.1
+				trait = craven
+			}
+			modifier = {
+				factor = 0.25
+				trait = patient
+			}
+		}
+	}
+	
+	option = {# Challenge declined
+		name = "OHNO"
+		
+		ROOT = { morale = -0.2 troops = -0.1 }
+		
+		FROM = {
+			character_event = {
+				id = challenge.3
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 3
+				NOT = { trait = fate_duel }
+				FROM = { trait = fate_duel }
+			}
+		}
+	}
+}
+
+#Siege!
+character_event = {
+	id = challenge.2
+	desc = "EVTDESC_challenge.2"
+	picture = "GFX_evt_duel"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {# Challenge accepted
+		name = "OK"
+		
+		FROM = {
+			siege = {
+				enemy = {
+					morale = 0.1
+				}
+			}
+		}
+		
+		FROM = {
+			character_event = {
+				id = challenge.4
+			}
+		}
+		
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 2
+				lower_tier_than = FROM
+			}
+			modifier = {
+				factor = 0.5
+				higher_tier_than = FROM
+			}
+			modifier = {
+				factor = 0.85
+				age = 40
+			}
+			modifier = {
+				factor = 0.85
+				age = 50
+			}
+			modifier = {
+				factor = 0.85
+				age = 60
+			}
+			modifier = {
+				factor = 0.4
+				tier = BARON
+			}
+			modifier = {
+				factor = 0.2
+				tier = COUNT
+			}
+			modifier = {
+				factor = 0.1
+				tier = DUKE
+			}
+			modifier = {
+				factor = 0.05
+				tier = KING
+			}
+			modifier = {
+				factor = 0
+				tier = EMPEROR
+			}
+			modifier = {
+				factor = 0.5
+				trait = destined
+				NOT = { 
+					trait = fate_duel
+					trait = duelist
+				}
+			}
+			modifier = {
+				factor = 0.1
+				trait = back_seat_leader
+			}
+			modifier = {
+				factor = 3
+				trait = fate_duel
+			}
+			modifier = {
+				factor = 5
+				trait = berserker
+			}
+			modifier = {
+				factor = 1.5
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				is_strong_trigger = yes
+			}
+			modifier = {
+				factor = 1.5
+				trait = tall
+			}
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					trait = infirm
+					trait = blinded
+				}
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				is_maimed_trigger = yes
+			}
+			modifier = {
+				factor = 0.1
+				trait = wounded
+			}
+			modifier = {
+				factor = 0.1
+				trait = craven
+			}
+			modifier = {
+				factor = 0.25
+				trait = patient
+			}
+		}
+	}
+	
+	option = {# Challenge declined
+		name = "OHNO"
+
+		FROM = {
+			siege = {
+				enemy = {
+					morale = -0.2
+					troops = -0.1
+				}
+			}
+		}
+		
+		FROM = {
+			character_event = {
+				id = challenge.3
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+			
+			modifier = {
+				factor = 10
+				AND = {
+					is_female = yes
+					NOR = {
+						culture_group = mongol
+						culture_group = yue
+						culture_group = tibetan_group
+						culture_group = man
+					}
+				}
+			}
+			modifier = {
+				factor = 10
+				is_adult = no
+			}
+			modifier = {
+				factor = 3
+				NOT = { trait = fate_duel }
+				FROM = { trait = fate_duel }
+			}
+		}
+	}
+}
+
+# Decline Duel
+character_event = {
+	id = challenge.3
+	desc = {
+		text = EVTDESCA_challenge.3
+		trigger = {
+			NOT = { trait = fate_duel }
+		}
+	}
+	desc = {
+		text = EVTDESCB_challenge.3
+		trigger = {
+			NOT = { FROM = { trait = fate_duel } }
+			trait = fate_duel
+		}
+	}
+	picture = "GFX_evt_duel"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK"
+		
+		hidden_tooltip = {
+			FROM = {
+				remove_character_modifier = battlefield_fight
+				add_character_modifier = {
+					name = battlefield_fight
+					duration = 5
+				}
+			}
+			remove_character_modifier = battlefield_fight
+			add_character_modifier = {
+				name = battlefield_fight
+				duration = 10
+			}
+		}
+		
+		ROOT = {
+			morale = 0.2
+		}
+	}
+}
+
+# Accept Duel
+character_event = {
+	id = challenge.4
+	desc = "EVTDESC_challenge.4"
+	picture = "GFX_evt_duel"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK"
+	
+		# Set flags for duel
+		set_character_flag = flag_battlefield_duel
+		FROM = { set_character_flag = flag_battlefield_duel }
+		
+		ROOT = {
+			morale = 0.1
+		}
+		
+		hidden_tooltip = {
+	    	save_event_target_as = combatant_1 #the person issuing the duel...
+	    	FROM = { save_event_target_as = combatant_2 } #the target of the duel...
+	        
+			pacifists_lose_piety_effect = yes
+			add_character_modifier = {
+				modifier = recent_duel_timer
+				duration = 20
+				hidden = yes
+			}
+	        hidden_tooltip = {
+				FROM = {
+					character_event = { id = HFP.10095 } #Duel evaluation (hidden) + result event as follow-up.
+				}
+			}
+		}
+	}
+}
+
+# Call unheard
+character_event = {
+	id = challenge.5
+	desc = "EVTDESC_challenge.5"
+	picture = "GFX_evt_duel"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "OK"
+		
+		ROOT = {
+			morale = 0.1
+		}
+	}
+}
+
+### AI DUEL ###
+character_event = {
+	id = challenge.6
+	
+	is_triggered_only = yes
+
+	hide_window = yes
+	
+	immediate = {
+		FROMFROM = { character_event = { id = challenge.4 } }
+	}
+}
+
+### LOST VASSAL ###
+character_event = {
+	id = challenge.7
+	desc = "EVTDESC_challenge.7"
+	picture = "GFX_evt_death"
+	border = "GFX_event_normal_frame_war"
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OH
+		
+		hidden_tooltip = {
+			random_list = {
+				70 = { }
+				5 = { character_event = { id = 38288 } }
+				5 = {
+					if = {
+						limit = { is_father = FROM }
+						character_event = { id = 38288 }
+					}
+				}
+				5 = {
+					if = {
+						limit = { sibling = FROM }
+						character_event = { id = 38288 }
+					}
+				}
+				5 = {
+					if = {
+						limit = { is_close_relative = FROM }
+						character_event = { id = 38288 }
+					}
+				}
+				5 = {
+					if = {
+						limit = { is_friend = FROM }
+						character_event = { id = 38288 }
+					}
+				}
+				5 = {
+					if = {
+						limit = { is_lover = FROM }
+						character_event = { id = 38288 }
+					}
+				}
+			}
+		}
+	}
+}

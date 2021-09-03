@@ -1,0 +1,18 @@
+# c_wuxi
+
+# County Title
+title = c_wuxi
+
+# Settlements
+max_settlements = 3
+
+b_wuxi = castle
+#b_fangxi = city
+#b_maoya = temple
+
+# Misc
+culture = bandunman
+religion = baihu
+terrain = hills
+
+#History

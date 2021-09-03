@@ -1,0 +1,287 @@
+# Define mercenary types here now instead of in the static_composition.txt file
+# Also remember to tell the landed title to use this mercenary type instead.
+# Several titles can refer to the same type as well now.
+
+tiger_guard_composition = {
+	levy_size = 1
+	heavy_infantry = 750
+	knights = 100
+	archers = 250
+}
+
+zealots_composition = {
+	levy_size = 1
+	heavy_infantry = 500
+	light_infantry = 400
+	archers = 200
+}
+
+# Regional Mercs
+
+baima_composition = {
+	levy_size = 1
+	knights = 50
+	horse_archers = 400
+	light_cavalry = 150
+}
+
+bashu_composition = {
+	levy_size = 1
+	light_infantry = 300
+	heavy_infantry = 50
+	archers = 400
+	pikemen = 150
+}
+
+zhongyuan_composition = {
+	levy_size = 1
+	light_infantry = 250
+	heavy_infantry = 150
+	light_cavalry = 150
+	archers = 150
+	pikemen = 200
+}
+
+feather_composition = {
+	levy_size = 1
+	light_infantry = 100
+	light_cavalry = 100
+	archers = 200
+}
+
+liang_composition = {
+	levy_size = 1
+	knights = 200
+	light_infantry = 100
+	heavy_infantry = 100
+	horse_archers = 50
+	light_cavalry = 100
+}
+
+yellow_composition = {
+	levy_size = 10
+	light_infantry = 450
+	heavy_infantry = 50
+	light_cavalry = 100
+	archers = 150
+	pikemen = 150
+}
+
+imperial_guard_composition = {
+	levy_size = 1
+	knights = 50
+	light_infantry = 100
+	heavy_infantry = 450
+	light_cavalry = 100
+	archers = 100
+	pikemen = 100
+}
+
+south_company_composition = {
+	levy_size = 3
+	light_infantry = 300
+	heavy_infantry = 200
+	light_cavalry = 200
+	archers = 100
+	war_elephants = 10
+}
+
+south_band_composition = {
+	levy_size = 1
+	light_infantry = 300
+	heavy_infantry = 200
+	light_cavalry = 200
+	archers = 100
+	war_elephants = 10
+}
+
+mercenary_princess_composition = {
+	levy_size = 5
+	archers = 450
+	heavy_infantry = 600
+	light_infantry = 500
+	light_cavalry = 500
+	pikemen = 200
+	galleys = 40
+}
+
+# Chinese Mercs
+han_massive_composition = {
+	levy_size = 6
+	heavy_infantry = 225
+	pikemen = 225
+	archers = 250
+	light_cavalry = 175
+	knights = 25
+}
+
+han_large_composition = {
+	levy_size = 5
+	archers = 150
+	light_infantry = 115
+	heavy_infantry = 235
+	pikemen = 235
+	knights = 15
+}
+
+han_mid_composition = {
+	levy_size = 3
+	light_infantry = 300
+	heavy_infantry = 120
+	pikemen = 120
+	light_cavalry = 100
+	archers = 200
+}
+
+han_mid_low_composition = {
+	levy_size = 2
+	light_infantry = 250
+	heavy_infantry = 200
+	pikemen = 100
+	light_cavalry = 100
+	archers = 200
+}
+
+outlaws_of_the_marsh = {
+	levy_size = 2
+	light_infantry = 300
+	heavy_infantry = 300
+	pikemen = 150
+}
+
+han_low_composition = {
+	levy_size = 1
+	light_infantry = 250
+	heavy_infantry = 100
+	pikemen = 100
+	light_cavalry = 100
+	archers = 150
+}
+
+han_tiny_composition_1 = {
+	levy_size = 1
+	archers = 260
+	light_infantry = 360
+	pikemen = 80
+}
+
+han_tiny_composition_2 = {
+	levy_size = 1
+	archers = 220
+	light_infantry = 320
+	heavy_infantry = 40
+	pikemen = 40
+}
+
+#Ethnic Mercs
+joseon_composition = {
+	levy_size = 1
+	knights = 50
+	horse_archers = 100
+	light_cavalry = 150
+	archers = 200
+	pikemen = 100
+}
+
+samhan_composition = {
+	levy_size = 1
+	light_infantry = 400
+	heavy_infantry = 100
+	archers = 200
+	pikemen = 100
+}
+
+qiang_composition = {
+	levy_size = 1
+	light_infantry = 400
+	heavy_infantry = 100
+	horse_archers = 50
+	light_cavalry = 50
+	archers = 200
+	pikemen = 100
+}
+
+wuhuan_composition = {
+	levy_size = 1
+	knights = 50
+	horse_archers = 150
+	light_cavalry = 400
+}
+
+wuxia_composition = {
+	levy_size = 1
+	light_infantry = 400
+	heavy_infantry = 100
+	archers = 300
+	pikemen = 100
+}
+
+xianbei_composition = {
+	levy_size = 1
+	knights = 100
+	horse_archers = 150
+	light_cavalry = 350
+}
+
+xiongnu_composition = {
+	levy_size = 1
+	horse_archers = 400
+	light_cavalry = 200
+}
+
+# Something Else
+korean_low_composition = {
+	levy_size = 1
+	light_infantry = 300
+	light_cavalry = 250
+	archers = 150
+}
+
+tibetan_low_composition = {
+	levy_size = 1
+	light_infantry = 200
+	heavy_infantry = 100
+	light_cavalry = 200
+	archers = 200
+}
+
+mongol_band_composition = {
+	levy_size = 1.5
+	horse_archers = 400
+	light_cavalry = 200
+}
+
+treasure_fleet_composition = {
+	levy_size = 5
+	archers = 150
+	heavy_infantry = 155
+	pikemen = 155
+	light_infantry = 200
+	galleys = 40
+}
+
+persian_caravan_guards_composition = {
+	levy_size = 3
+	light_cavalry = 300
+	camel_cavalry = 150
+}
+
+silk_road_sentinels_composition = {
+	levy_size = 3
+	light_infantry = 200
+	heavy_infantry = 125
+	light_cavalry = 225
+	knights = 25
+}
+
+## Must exist or else dynamic mercenary band might fail for nomads!
+default_culture_band_composition = {
+	levy_size = 1
+	light_infantry = 100
+}
+
+mongol_culture_band_composition = {
+	levy_size = 1
+	light_cavalry = 60
+	horse_archers = 40
+}

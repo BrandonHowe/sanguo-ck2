@@ -1,0 +1,19 @@
+# c_youbeiping
+
+# County Title
+title = c_youbeiping
+
+# Settlements
+max_settlements = 4
+
+b_youbeiping = castle
+#b_jingcheng = city
+#b_niuying = temple
+#b_niangnian = castle
+
+# Misc
+culture = han
+religion = confucian
+terrain = plains
+
+#History

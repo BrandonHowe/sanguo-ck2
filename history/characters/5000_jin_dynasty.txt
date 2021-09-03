@@ -1,0 +1,1615 @@
+#######Jin Dynasty range: 400-499######
+
+##################################
+########### IMPERIAL #############
+##################################
+
+5000={
+	name="Yi"
+	dna="cdbgkpedfal"
+	properties="ac00fo000000"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5004
+    trait="genius"
+	trait="strong"
+	trait="deceitful"
+	trait="ambitious"
+	trait="patient"
+	trait="just"
+	trait="temperate"
+	trait="zealous"
+	179.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=5004 #Sima Fang
+	}
+	189.8.22={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+			health=2
+		}
+	}
+	202.1.1={
+		employer=4212
+		add_spouse=3940
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+	}
+	217.4.1={
+		employer=10400
+	}
+	219.1.1={
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+		give_job_title = job_treasurer
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	235.1.1={
+		give_job_title = job_marshal
+	}
+	239.1.22={
+		employer=10439 #Cao Shuang
+	}
+	251.9.7={
+		death=yes
+	}
+}
+5001={
+	name="Jun"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	50.1.1={
+		birth=yes
+	}
+	115.6.1={
+		death={death_reason=death_suicide}
+	}
+}
+5002={
+	name="Liang"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5001
+	80.1.1={
+		birth=yes
+	}
+	160.1.1={
+		death=yes
+	}
+}
+5003={
+	name="Jun"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5002
+	trait="tall"
+	113.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+			health=3
+		}
+	}
+	197.1.1={
+		death=yes
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+}
+5004={
+	name="Fang"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5003
+	trait="honorable"
+	trait="honest"
+	trait="just"
+	trait="temperate"
+	trait="zealous"
+	149.1.1={
+		birth=yes
+	}
+	184.1.1={
+		effect={
+			health=2
+		}
+	}
+	189.8.22={
+		employer=300
+	}
+	192.5.22={
+		employer=120
+	}
+	192.7.1={
+		employer=307
+	}
+	195.1.1={
+		employer=308
+	}
+	196.1.1={
+		employer=400
+	}
+	219.1.1={
+		death=yes
+	}
+}
+#####
+#
+#	2nd Generation
+#
+#####
+5005={
+	name="Lang"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5004
+	trait="tall"
+	trait="strong"
+	trait="honorable"
+	trait="honest"
+	trait="just"
+	trait="temperate"
+	trait="zealous"
+	171.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=5004
+	}
+	189.8.22={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_ji
+		}
+	}
+	194.1.1={
+		effect={
+			clr_character_flag=refuge_ji
+			set_character_flag=refuge_sili
+		}
+	}
+	195.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	217.4.1={
+		add_trait=ill
+	}
+	217.5.1={
+		death={death_reason=death_trait}
+	}
+}
+5006={
+	name="Fu"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5004
+	trait="scholar"
+	trait="tall"
+	trait="humble"
+	trait="patient"
+	trait="just"
+	trait="temperate"
+	trait="zealous"
+	180.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=5004
+		effect={
+			health=4
+		}
+	}
+	189.8.22={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	272.1.1={
+		death=yes
+	}
+}
+5007={
+	name="Kui"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5004
+	180.10.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=5004
+		effect={
+			health=2
+		}
+	}
+	189.8.22={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	260.1.1={
+		death=yes
+	}
+}
+5008={
+	name="Xun"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5004
+	181.8.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=5004
+		effect={
+			health=2
+		}
+	}
+	189.8.22={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	260.1.1={
+		death=yes
+	}
+}
+5009={
+	name="Jin"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5004
+	182.6.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=5004
+		effect={
+			health=2
+		}
+	}
+	189.8.22={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	260.1.1={
+		death=yes
+	}
+}
+5010={
+	name="Tong"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5004
+	183.4.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=5004
+		effect={
+			health=2
+		}
+	}
+	189.8.22={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	260.1.1={
+		death=yes
+	}
+}
+5011={
+	name="Min"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5004
+	184.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=5004
+	}
+	189.8.22={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	195.1.1={
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+		death=yes
+	}
+}
+5012={
+	name="Kun"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5001
+	85.1.1={
+		birth=yes
+	}
+	135.1.1={
+		death=yes
+	}
+}
+5013={
+	name="Hu"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5012
+	110.1.1={
+		birth=yes
+	}
+	170.1.1={
+		death=yes
+	}
+}
+5014={
+	name="Ci"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5013
+	135.1.1={
+		birth=yes
+	}
+	184.1.1={
+		death=yes
+	}
+}
+5015={
+	name="Zhi"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5014
+	trait="quick"
+	trait="just"
+	trait="honest"
+	trait="diligent"
+	trait="temperate"
+	trait="zealous"
+	165.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_yan
+		}
+	}
+	191.1.1={
+		effect={
+			clr_character_flag=refuge_yan
+			set_character_flag=refuge_jing
+		}
+	}
+	208.10.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_jing
+		}
+	}
+	213.6.1={
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	240.1.1={
+		death=yes
+	}
+}
+#####
+#
+#	3rd Generation
+#
+#####
+5016={
+	name="Yi"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5005
+	194.1.1={
+		birth=yes
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	195.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		death=yes
+	}
+}
+5017={
+	name="Wang"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	trait="skilled_tactician"
+	trait="scholar"
+	trait="quick"
+	trait="just"
+	trait="brave"
+	trait="diligent"
+	trait="honorable"
+	trait="temperate"
+	205.1.1={
+		birth=yes
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		father=5005
+		add_trait=adopted
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	271.1.1={
+		death=yes
+	}
+}
+5018={
+	name="Nanyang"
+	female=yes
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	206.1.1={
+		birth=yes
+		employer=4212
+	}
+	208.1.1={
+		employer=400
+	}
+	217.4.1={
+		employer=10400
+	}
+	219.1.1={
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	280.1.1={
+		death=yes
+	}
+}
+5019={
+	name="Shi"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	mother=3940
+	208.1.1={
+		birth=yes
+		employer=400 #Cao Cao
+	}
+	217.4.1={
+		employer=10400
+	}
+	219.1.1={
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		add_spouse=10453
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	255.3.1={
+		death=yes
+	}
+}
+5020={
+	name="Zhao"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	mother=3940
+	211.1.1={
+		birth=yes
+		employer=400 #Cao Cao
+	}
+	217.4.1={
+		employer=10400
+	}
+	219.1.1={
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	232.1.1={
+		add_spouse = 409
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	265.9.6={
+		death=yes
+	}
+}
+5021={
+	name="Gan"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	mother=3940
+	214.1.1={
+		birth=yes
+		employer=400 #Cao Cao
+	}
+	217.4.1={
+		employer=10400
+	}
+	219.1.1={
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	260.1.1={
+		death=yes
+	}
+}
+5022={
+	name="Liang"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	220.3.15={
+		birth=yes
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	291.1.1={
+		death=yes
+	}
+}
+5023={
+	name="Zhou"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	227.4.1={
+		birth=yes
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	283.1.1={
+		death=yes
+	}
+}
+5024={
+	name="Jing"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	229.2.1={
+		birth=yes
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	294.1.1={
+		death=yes
+	}
+}
+5025={
+	name="Jun"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	231.8.1={
+		birth=yes
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	301.1.1={
+		death=yes
+	}
+}
+5026={
+	name="Lun"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	233.4.1={
+		birth=yes
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	301.6.5={
+		death=yes
+	}
+}
+5027={
+	name="Gaolingxuan"
+	female=yes
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5000
+	234.1.1={
+		birth=yes
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	308.1.1={
+		death=yes
+	}
+}
+5028={
+	name="Yong"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	204.1.1={
+		birth=yes
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	283.1.1={
+		death=yes
+	}
+}
+5029={
+	name="Fu"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	trait="twin"
+	208.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	287.1.1={
+		death=yes
+	}
+}
+5030={
+	name="Yi"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	trait="twin"
+	208.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	287.1.1={
+		death=yes
+	}
+}
+5031={
+	name="Huang"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	210.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	289.1.1={
+		death=yes
+	}
+}
+5032={
+	name="Gui"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	211.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	284.1.1={
+		death=yes
+	}
+}
+5033={
+	name="Gui"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	212.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	285.1.1={
+		death=yes
+	}
+}
+5034={
+	name="Heng"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	214.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	279.1.1={
+		death=yes
+	}
+}
+5035={
+	name="Jing"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5006
+	217.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	290.1.1={
+		death=yes
+	}
+}
+5036={
+	name="Tai"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5007
+	206.1.1={
+		birth=yes
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	281.1.1={
+		death=yes
+	}
+}
+5037={
+	name="Quan"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5007
+	209.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	263.1.1={
+		death=yes
+	}
+}
+5038={
+	name="Sui"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5007
+	213.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	288.1.1={
+		death=yes
+	}
+}
+5039={
+	name="Sui"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5008
+	207.1.1={
+		birth=yes
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	279.1.1={
+		death=yes
+	}
+}
+5040={
+	name="Xun"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5009
+	204.4.1={
+		birth=yes
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	281.5.1={
+		death=yes
+	}
+}
+5041={
+	name="Mu"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5009
+	206.1.1={
+		birth=yes
+		employer=4000
+		add_trait="refuge"
+		effect={
+			set_character_flag=refuge_sili
+		}
+	}
+	208.1.1={
+		employer=400
+		remove_trait="refuge"
+		effect={
+			clr_character_flag=refuge_sili
+		}
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	279.1.1={
+		death=yes
+	}
+}
+5042={
+	name="Ling"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5010
+	210.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	280.1.1={
+		death=yes
+	}
+}
+5043={
+	name="Bin"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5010
+	213.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	285.1.1={
+		death=yes
+	}
+}
+5044={
+	name="Shun"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5010
+	214.1.1={
+		birth=yes
+		employer=400
+	}
+	220.3.15={
+		employer=10400
+	}
+	226.6.29={
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	289.1.1={
+		death=yes
+	}
+}
+5045={
+	name="Jingmei"
+	female=yes
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5019
+	mother=10453
+	227.1.1={
+		birth=yes
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	289.1.1={
+		death=yes
+	}
+}
+5046={
+	name="Yimei"
+	female=yes
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5019
+	mother=10453
+	228.1.1={
+		birth=yes
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	295.1.1={
+		death=yes
+	}
+}
+5047={
+	name="Baihua"
+	female=yes
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5019
+	mother=10453
+	229.1.1={
+		birth=yes
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	303.1.1={
+		death=yes
+	}
+}
+5048={
+	name="Qing"
+	female=yes
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5019
+	mother=10453
+	230.1.1={
+		birth=yes
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	306.1.1={
+		death=yes
+	}
+}
+5049={
+	name="Hui"
+	female=yes
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5019
+	mother=10453
+	232.1.1={
+		birth=yes
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		employer=5050 #Sima Yan
+	}
+	310.1.1={
+		death=yes
+	}
+}
+#5050-5060 Sons and Daughters of Sima Zhao #5020
+5050={
+	name="Yan"
+	dynasty=22
+	religion="confucian"
+	culture="han"
+	father=5021
+	236.1.1={
+		birth=yes
+		employer=10410 #Cao Rui
+	}
+	239.1.22={
+		employer=10420 #Cao Fang
+	}
+	254.8.1={
+		employer=10426 #Cao Mao
+	}
+	265.2.8={
+		name="Wu"
+		effect={
+			add_artifact=imperial_seal
+		}
+	}
+	290.5.26={
+		death=yes
+	}
+}
+#5046-5047 Sons of Sima Gan #5022
+#5048-5052 Sons of Sima Liang #5023
+#5053-5056 Sons of Sima Zhou #5024
+#5057-5066 Sons of Sima Jun #5026
+#5067-5070 Sons of Sima Lun #5027
+
+#####
+#
+#	4th Generation
+#
+#####
+
+
+#TBD - SIMA FAMILY TREE

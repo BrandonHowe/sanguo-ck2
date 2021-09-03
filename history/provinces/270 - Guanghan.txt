@@ -1,0 +1,22 @@
+# c_guanghan
+
+# County Title
+title = c_guanghan
+
+# Settlements
+max_settlements = 4
+
+b_luo = castle
+b_pingyuanxiang = city
+#b_pingtang = temple
+#b_heixian = castle
+
+# Misc
+culture = han
+religion = confucian
+terrain = mountain
+
+#History
+190.1.1={
+	religion=tianshi
+}

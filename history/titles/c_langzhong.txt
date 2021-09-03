@@ -1,0 +1,22 @@
+# e_china
+1.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1.1.1={
+	liege=d_ba
+}
+184.1.1={
+	holder=4493 #Meng Biao
+}
+196.1.1={
+	liege=d_baxi
+	holder=161 #Pang Xi
+}
+214.1.1={
+	holder=602 #Zhang Fei
+}
+221.3.10={
+	holder=4584 #Li Fu
+}
+#Xi Zheng from 263 to 278

@@ -1,0 +1,840 @@
+3200={
+	name="Himiko"
+	female="yes"
+	dynasty=2100 #Yamato
+	dna="nnjuplzzjog"
+	prp="gd0dbd000000000000"
+	diplomacy=10
+	martial=5
+	stewardship=9
+	intrigue=6
+	learning=10
+	religion="shinto"
+	culture="wa"
+	father=3201
+	disallow_random_traits=yes
+	trait="fate_loved"
+	trait="shrewd"
+	trait="quick"
+	trait="fair"
+	trait="just"
+	trait="celibate"
+	trait="deceitful"
+	trait="temperate"
+	trait="diligent"
+	trait="zealous"
+	trait="mystic"
+	trait="mastermind_theologian"
+	170.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		effect={
+			health=3
+		}
+	}
+	248.1.1={
+		death=yes
+	}
+}
+3201={
+	name="Seimu"
+	dynasty=2100 #Yamato
+	religion="shinto"
+	culture="wa"
+	trait="arbitrary"
+	trait="cynical"
+	trait="wroth"
+	84.1.1={
+		birth=yes
+	}
+	189.1.1={
+		employer=3200
+		add_trait="ill"
+		add_trait="incapable"
+	}
+	191.1.1={
+		death={death_reason=death_trait}
+	}
+}
+3202={
+	name="Akira"
+	dynasty=2100 #Yamato
+	diplomacy=8
+	martial=8
+	stewardship=9
+	intrigue=7
+	learning=8
+	religion="shinto"
+	culture="wa"
+	father=3201
+	disallow_random_traits=yes
+	trait="gregarious"
+	trait="quick"
+	trait="fair"
+	trait="just"
+	trait="kind"
+	trait="honorable"
+	trait="temperate"
+	trait="diligent"
+	trait="zealous"
+	trait="grey_eminence"
+	172.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		effect={
+			health=3
+		}
+	}
+	189.1.1={
+		employer=3200
+	}
+	253.1.1={
+		death={death_reason=death_murder_unknown}
+	}
+}
+3203={
+	name="Iyo"
+	female="yes"
+	dynasty=2100 #Yamato
+	diplomacy=8
+	martial=5
+	stewardship=10
+	intrigue=8
+	learning=9
+	religion="shinto"
+	culture="wa"
+	father=3202
+	disallow_random_traits=yes
+	trait="shrewd"
+	trait="quick"
+	trait="fair"
+	trait="just"
+	trait="kind"
+	trait="honorable"
+	trait="temperate"
+	trait="diligent"
+	trait="zealous"
+	trait="mystic"
+	trait="mastermind_theologian"
+	240.1.1={
+		birth=yes
+		employer=3200
+		effect={
+			health=4
+		}
+	}
+	335.1.1={
+		death=yes
+	}
+}
+
+### Non-Imperial ### Anachronistic for gameplay purposes
+# Mononobe Clan
+3210={
+	name="Tochine"
+	dynasty=2123 #Mononobe
+	religion="shinto"
+	culture="wa"
+	trait="mastermind_theologian"
+	trait="zealous"
+	150.1.1={
+		birth=yes
+	}
+	168.1.1={
+		add_spouse=3237
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	230.1.1={
+		death=yes
+	}
+}
+3211={
+	name="Ikui"
+	dynasty=2123 #Mononobe
+	religion="shinto"
+	culture="wa"
+	father=3210
+	mother=3237
+	trait="twin"
+	168.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	250.1.1={
+		death=yes
+	}
+}
+3212={
+	name="Natsuki"
+	female=yes
+	dynasty=2123 #Mononobe
+	religion="shinto"
+	culture="wa"
+	father=3210
+	mother=3237
+	trait="twin"
+	168.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		add_spouse=3219
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	250.1.1={
+		death=yes
+	}
+}
+3213={
+	name="Ikoto"
+	dynasty=2123 #Mononobe
+	religion="shinto"
+	culture="wa"
+	father=3211
+	184.1.1={
+		birth=yes
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	270.1.1={
+		death=yes
+	}
+}
+3214={
+	name="Tashiraka"
+	female=yes
+	dynasty=2123 #Mononobe
+	religion="shinto"
+	culture="wa"
+	father=3211
+	190.1.1={
+		birth=yes
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	270.1.1={
+		death=yes
+	}
+}
+3215={
+	name="Ikofutsu"
+	dynasty=2123 #Mononobe
+	religion="shinto"
+	culture="wa"
+	father=3213
+	203.1.1={
+		birth=yes
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	288.1.1={
+		death=yes
+	}
+}
+3216={
+	name="Mukiri"
+	dynasty=2123 #Mononobe
+	religion="shinto"
+	culture="wa"
+	father=3215
+	220.1.1={
+		birth=yes
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	300.1.1={
+		death=yes
+	}
+}
+3217={
+	name="Iwamochi"
+	dynasty=2123 #Mononobe
+	religion="shinto"
+	culture="wa"
+	father=3216
+	240.1.1={
+		birth=yes
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	320.1.1={
+		death=yes
+	}
+}
+# Nakatomi Clan
+3218={
+	name="Amahisa"
+	dynasty=2125 #Nakatomi
+	religion="shinto"
+	culture="wa"
+	145.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		effect={
+			add_rival=3236
+		}
+	}
+	189.1.1={
+		employer=3200
+	}
+	225.1.1={
+		death=yes
+	}
+}
+3219={
+	name="Abiko"
+	dynasty=2125 #Nakatomi
+	religion="shinto"
+	culture="wa"
+	father=3218
+	165.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		add_spouse=3212
+	}
+	189.1.1={
+		employer=3200
+	}
+	240.1.1={
+		death=yes
+	}
+}
+3220={
+	name="Mahito"
+	dynasty=2125 #Nakatomi
+	religion="shinto"
+	culture="wa"
+	father=3219
+	mother=3212
+	184.1.1={
+		birth=yes
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	255.1.1={
+		death=yes
+	}
+}
+3221={
+	name="Chinatsu"
+	female=yes
+	dynasty=2125 #Nakatomi
+	religion="shinto"
+	culture="wa"
+	father=3219
+	mother=3212
+	188.1.1={
+		birth=yes
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	260.1.1={
+		death=yes
+	}
+}
+3222={
+	name="Kamako"
+	dynasty=2125 #Nakatomi
+	religion="shinto"
+	culture="wa"
+	father=3220
+	206.1.1={
+		birth=yes
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	300.1.1={
+		death=yes
+	}
+}
+# Soga Clan
+3223={
+	name="Ishikawa"
+	dynasty=2133 #Soga
+	religion="shinto"
+	culture="wa"
+	160.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		add_spouse=3242
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	250.1.1={
+		death=yes
+	}
+}
+3224={
+	name="Machi"
+	dynasty=2133 #Soga
+	religion="shinto"
+	culture="wa"
+	father=3223
+	mother=3242
+	184.1.1={
+		birth=yes
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	280.1.1={
+		death=yes
+	}
+}
+3225={
+	name="Karako"
+	dynasty=2133 #Soga
+	religion="shinto"
+	culture="wa"
+	father=3224
+	206.1.1={
+		birth=yes
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	275.1.1={
+		death=yes
+	}
+}
+3226={
+	name="Himari"
+	female=yes
+	dynasty=2133 #Soga
+	religion="shinto"
+	culture="wa"
+	father=3224
+	208.1.1={
+		birth=yes
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	280.1.1={
+		death=yes
+	}
+}
+# Kibi Clan
+3227={
+	name="Ojin"
+	dynasty=2112 #Kibi
+	religion="shinto"
+	culture="wa"
+	145.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	230.1.1={
+		death=yes
+	}
+}
+3228={
+	name="Tasa"
+	dynasty=2112 #Kibi
+	religion="shinto"
+	culture="wa"
+	father=3227
+	trait="flamboyant_schemer"
+	164.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	250.1.1={
+		death=yes
+	}
+}
+3229={
+	name="Ishihime"
+	female=yes
+	dynasty=2112 #Kibi
+	religion="shinto"
+	culture="wa"
+	father=3227
+	168.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		add_spouse=3239
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	260.1.1={
+		death=yes
+	}
+}
+3230={
+	name="Oto"
+	dynasty=2112 #Kibi
+	religion="shinto"
+	culture="wa"
+	father=3228
+	trait="fortune_builder"
+	184.1.1={
+		birth=yes
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	260.1.1={
+		death=yes
+	}
+}
+# Otomo Clan
+3231={
+	name="Nakatsuhiko"
+	dynasty=2128 #Otomo
+	religion="shinto"
+	culture="wa"
+	150.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	235.1.1={
+		death=yes
+	}
+}
+3232={
+	name="Kosuke"
+	dynasty=2128 #Otomo
+	religion="shinto"
+	culture="wa"
+	father=3231
+	168.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	245.1.1={
+		death=yes
+	}
+}
+3233={
+	name="Kasanui"
+	female=yes
+	dynasty=2128 #Otomo
+	religion="shinto"
+	culture="wa"
+	father=3231
+	170.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	260.1.1={
+		death=yes
+	}
+}
+3234={
+	name="Haruma"
+	dynasty=2128 #Otomo
+	religion="shinto"
+	culture="wa"
+	father=3232
+	184.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	280.1.1={
+		death=yes
+	}
+}
+# Sarume Clan
+3235={
+	name="Inishiki"
+	dynasty=2131 #Sarume
+	religion="shinto"
+	culture="wa"
+	trait="grey_eminence"
+    trait="gregarious"
+    trait="temperate"
+    trait="diligent"
+    trait="patient"
+    trait="humble"
+    trait="zealous"
+    trait="just"
+    trait="brave"
+	165.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	255.1.1={
+		death=yes
+	}
+}
+# Inbe Clan
+3236={
+	name="Ryusei"
+	dynasty=2119 #Inbe
+	religion="shinto"
+	culture="wa"
+	trait="scholarly_theologian"
+	trait="humble"
+	135.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		effect={
+			add_rival=3218
+		}
+	}
+	189.1.1={
+		employer=3200
+	}
+	200.1.1={
+		death=yes
+	}
+}
+3237={
+	name="Ayaka"
+	female=yes
+	dynasty=2119 #Inbe
+	religion="shinto"
+	culture="wa"
+	father=3236
+	trait="twin"
+	154.1.1={
+		birth=yes
+	}
+	168.1.1={
+		add_spouse=3210
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	230.1.1={
+		death=yes
+	}
+}
+3238={
+	name="Suki"
+	female=yes
+	dynasty=2119 #Inbe
+	religion="shinto"
+	culture="wa"
+	father=3236
+	trait="twin"
+	154.1.1={
+		birth=yes
+	}
+	168.1.1={
+		add_spouse=3240
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	230.1.1={
+		death=yes
+	}
+}
+3239={
+	name="Kaito"
+	dynasty=2119 #Inbe
+	religion="shinto"
+	culture="wa"
+	father=3236
+	trait="twin"
+	160.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		add_spouse=3229
+	}
+	189.1.1={
+		employer=3200
+	}
+	240.1.1={
+		death=yes
+	}
+}
+#Katsuragi
+3240={
+	name="Sotsuhiko"
+	dynasty=2109 #Katsuragi
+	religion="shinto"
+	culture="wa"
+	150.1.1={
+		birth=yes
+	}
+	168.1.1={
+		add_spouse=3238
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	235.1.1={
+		death=yes
+	}
+}
+3241={
+	name="Tamada"
+	dynasty=2109 #Katsuragi
+	religion="shinto"
+	culture="wa"
+	father=3240
+	mother=3238
+	168.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+	}
+	189.1.1={
+		employer=3200
+	}
+	245.1.1={
+		death=yes
+	}
+}
+3242={
+	name="Kehime"
+	female=yes
+	dynasty=2109 #Katsuragi
+	religion="shinto"
+	culture="wa"
+	father=3240
+	mother=3238
+	170.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=3201
+		add_spouse=3223
+	}
+	189.1.1={
+		employer=3200
+	}
+	248.1.1={
+		employer=3203
+	}
+	265.1.1={
+		death=yes
+	}
+}

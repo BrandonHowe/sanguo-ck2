@@ -1,0 +1,18 @@
+# c_panyu
+
+# County Title
+title = c_panyu
+
+# Settlements
+max_settlements = 3
+
+b_panyu = castle
+#b_sunchi = city
+#b_guangzhu = temple
+
+# Misc
+culture = nanyue
+religion = animist
+terrain = hills
+
+#History

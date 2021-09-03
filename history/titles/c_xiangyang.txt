@@ -1,0 +1,40 @@
+# e_china
+1.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1.1.1={
+	liege=d_nan
+}
+114.1.1={
+	holder=3618 #Fa Xiong
+}
+144.1.1={
+	holder=844 #Ma Rong
+}
+146.1.1={
+	holder=3807 #Han Chun
+}
+184.1.1={
+	holder=4112 #Random
+}
+186.1.1={
+	holder=117 #Xu Qiu 
+}
+189.9.1={
+	holder=48 #Liu Biao
+}
+208.8.1={
+	holder=53 #Liu Cong
+}
+208.9.1={
+	holder=20448 #Li Li
+}
+209.3.1={
+	liege=d_nanyang
+}
+#Yue Jin
+
+
+
+#Incomplete

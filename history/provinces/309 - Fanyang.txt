@@ -1,0 +1,18 @@
+# c_fanyang
+
+# County Title
+title = c_fanyang
+
+# Settlements
+max_settlements = 3
+
+b_fanyang = castle
+#b_minjianhu = city
+#b_maguan = temple
+
+# Misc
+culture = han
+religion = confucian
+terrain = plains
+
+#History

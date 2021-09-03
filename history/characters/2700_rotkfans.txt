@@ -1,0 +1,654 @@
+#Fan Characters
+
+# Deth_Glitch
+2700={
+	name="Wugui"
+	dynasty=2700
+	diplomacy=8
+	martial=7
+	stewardship=8
+	intrigue=7
+	learning=5
+	culture="han"
+	religion="confucian"
+	trait="brilliant_strategist"
+	trait="strategist"
+	trait="strong"
+	trait="quick"
+	trait="lustful"
+	trait="proud"
+	trait="brave"
+	trait="wounded"
+	trait="unyielding_leader"
+	trait="narrow_flank_leader"
+	trait="inspiring_leader"
+	154.3.6={
+		birth=yes
+	}
+	170.4.1={
+		add_spouse=2703
+	}
+	220.3.6={
+		death=yes
+	}
+}
+2701={
+	name="Li"
+	dynasty=2700
+	diplomacy=8
+	martial=9
+	stewardship=7
+	intrigue=5
+	learning=6
+	culture="han"
+	religion="confucian"
+	father=2700
+	trait="strong"
+	trait="proud"
+	trait="legit_bastard"
+	172.7.3={
+		birth=yes
+	}
+	260.3.6={
+		death={
+			death_reason=death_murder
+			killer=2702
+		}
+	}
+}
+2702={
+	name="Yuan"
+	dynasty=2700
+	diplomacy=6
+	martial=4
+	stewardship=7
+	intrigue=10
+	learning=8
+	culture="han"
+	religion="confucian"
+	father=2700
+	mother=2703
+	trait="kinslayer"
+	trait="arbitrary"
+	trait="cruel"
+	172.5.2={
+		birth=yes
+	}
+	260.3.6={
+		death={
+			death_reason=death_murder
+			killer=2701
+		}
+	}
+}
+2703={
+	name="Peng"
+	female=yes
+	dynasty=174
+	diplomacy=10
+	martial=2
+	stewardship=10
+	intrigue=5
+	learning=8
+	culture="han"
+	religion="confucian"
+	trait="fortune_builder"
+	trait="fair"
+	trait="gregarious"
+	trait="content"
+	156.1.1={
+		birth=yes
+	}
+	170.4.1={
+		add_spouse=2700
+	}
+	220.3.6={
+		death=yes
+	}
+}
+
+# KaiserBeer
+2704={
+	name="Yue"
+	female=yes
+	dynasty=29
+	diplomacy=8
+	martial=6
+	stewardship=6
+	intrigue=8
+	learning=7
+	culture="han"
+	religion="confucian"
+	father=2707
+	trait="mastermind_theologian"
+	trait="temperate"
+	trait="patient"
+	trait="content"
+	trait="proud"
+	trait="kind"
+	trait="chaste"
+	160.1.1={
+		birth=yes
+	}
+	175.1.1={
+		add_spouse=2705
+	}
+	215.11.30={
+		death=yes
+	}
+}
+2705={
+	name="Yusheng"
+	dynasty=2701
+	diplomacy=9
+	martial=4
+	stewardship=8
+	intrigue=7
+	learning=7
+	culture="han"
+	religion="confucian"
+	trait="midas_touched"
+	trait="administrator"
+	trait="quick"
+	trait="ambitious"
+	trait="diligent"
+	trait="proud"
+	trait="just"
+	trait="patient"
+	trait="cynical"
+	trait="deceitful"
+	trait="organizer"
+	159.7.17={
+		birth=yes
+	}
+	175.1.1={
+		add_spouse=2704
+	}
+	209.10.3={
+		trait="ill"
+		death={
+			death_reason=death_trait
+		}
+	}
+}
+2706={
+	name="Wangli"
+	dynasty=2701
+	diplomacy=8
+	martial=5
+	stewardship=9
+	intrigue=7
+	learning=6
+	culture="han"
+	religion="confucian"
+	father=2705
+	mother=2704
+	trait="fortune_builder"
+	trait="temperate"
+	trait="greedy"
+	trait="patient"
+	trait="slothful"
+	trait="proud"
+	trait="kind"
+	183.6.23={
+		birth=yes
+	}
+	225.11.30={
+		death={
+			death_reason=death_battle
+		}
+	}
+}
+2707={
+	name="Bading"
+	dynasty=29
+	culture="han"
+	religion="confucian"
+	father=720
+	120.1.1={
+		birth=yes
+	}
+	170.1.1={
+		death=yes
+	}
+}
+2708={
+	name="Ranwu"
+	dynasty=2702
+	diplomacy=7
+	martial=4
+	stewardship=8
+	intrigue=8
+	learning=8
+	culture="han"
+	religion="confucian"
+	trait="midas_touched"
+	trait="administrator"
+	trait="ambitious"
+	trait="deceitful"
+	trait="diligent"
+	trait="envious"
+	trait="genius"
+	trait="greedy"
+	trait="lustful"
+	trait="selfish"
+	trait="dishonorable"
+	168.1.1={
+		birth=yes
+	}
+	260.1.1={
+		death=yes
+	}
+}
+
+#Zamarak500
+2709={
+	name="Meng"
+	dynasty=2703
+	diplomacy=8
+	martial=2
+	stewardship=5
+	intrigue=10
+	learning=10
+	culture="han"
+	religion="confucian"
+	trait="intricate_webweaver"
+	trait="scholar"
+	trait="shrewd"
+	trait="diligent"
+	trait="envious"
+	trait="erudite"
+	trait="deceitful"
+	129.1.1={
+		birth=yes
+	}
+	202.1.1={
+		death=yes
+	}
+}
+2710={
+	name="Guo"
+	diplomacy=9
+	martial=9
+	stewardship=7
+	intrigue=5
+	learning=5
+	culture="han"
+	religion="confucian"
+	trait="brilliant_strategist"
+	trait="socializer"
+	trait="trusting"
+	trait="gregarious"
+	trait="charitable"
+	trait="humble"
+	trait="zealous"
+	trait="brave"
+	trait="master_of_flame"
+	trait="holy_warrior"
+	trait="inspiring_leader"
+	155.1.1={
+		birth=yes
+	}
+	178.1.1={
+		add_spouse=2712
+	}
+	181.1.1={
+		dynasty=2703
+		add_trait=adopted
+		father=2709
+		effect={
+			add_rival=2711
+		}
+	}
+	184.1.1={
+		employer=2709
+	}
+	213.1.1={
+		death=yes
+	}
+}
+2711={
+	name="Jin"
+	dynasty=2703
+	diplomacy=5
+	martial=6
+	stewardship=9
+	intrigue=10
+	learning=5
+	culture="han"
+	religion="confucian"
+	father=2709
+	trait="elusive_shadow"
+	trait="administrator"
+	trait="envious"
+	trait="wroth"
+	trait="proud"
+	trait="ambitious"
+	trait="erudite"
+	trait="deceitful"
+	trait="paranoid"
+	trait="organizer"
+	161.1.1={
+		birth=yes
+	}
+	181.1.1={
+		effect={
+			add_rival=2710
+		}
+	}
+	184.1.1={
+		employer=2709
+	}
+	202.1.1={
+		employer=2710
+	}
+	233.1.1={
+		death=yes
+	}
+}
+2712={
+	name="Cai"
+	female=yes
+	diplomacy=9
+	martial=7
+	stewardship=9
+	intrigue=8
+	learning=2
+	culture="han"
+	religion="confucian"
+	trait="charismatic_negotiator"
+	trait="gardener"
+	trait="content"
+	trait="kind"
+	trait="greedy"
+	trait="diligent"
+	trait="patient"
+	162.1.1={
+		birth=yes
+	}
+	178.1.1={
+		add_spouse=2710
+	}
+	184.1.1={
+		employer=2709
+	}
+	202.1.1={
+		employer=2710
+	}
+	213.1.1={
+		employer=2711
+	}
+	220.1.1={
+		death=yes
+	}
+}
+2713={
+	name="Zan"
+	diplomacy=7
+	martial=6
+	stewardship=8
+	intrigue=10
+	learning=4
+	culture="han"
+	religion="confucian"
+	father=2710
+	mother=2712
+	trait="intricate_webweaver"
+	trait="genius"
+	trait="humble"
+	trait="diligent"
+	trait="temperate"
+	trait="patient"
+	180.1.1={
+		birth=yes
+	}
+	181.1.1={
+		dynasty=2703
+	}
+	184.1.1={
+		employer=2709
+	}
+	202.1.1={
+		employer=2710
+	}
+	213.1.1={
+		employer=2711
+	}
+	250.1.1={
+		death=yes
+	}
+}
+
+#KingTao86
+
+2714={
+	name="Xi"
+	dynasty=2704 #Gong
+	culture="han"
+	religion="confucian"
+	110.1.1={
+		birth=yes
+	}
+	160.1.1={
+		death=yes
+	}
+}
+2715={
+	name="Fa"
+	dynasty=2704
+	culture="han"
+	religion="confucian"
+	father=2714
+	trait="twin"
+	131.1.1={
+		birth=yes
+	}
+	184.1.1={
+		death=yes
+	}
+}
+2716={
+	name="Cai"
+	dynasty=2704
+	culture="han"
+	religion="confucian"
+	father=2714
+	trait="twin"
+	131.1.1={
+		birth=yes
+	}
+	184.1.1={
+		death=yes
+	}
+}
+2717={
+	name="Ba"
+	dynasty=2704
+	culture="han"
+	religion="confucian"
+	father=2715
+	151.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=2722 #Gong Fang
+	}
+	240.1.1={
+		death=yes
+	}
+}
+2718={
+	name="Hong"
+	dynasty=2704
+	culture="han"
+	religion="confucian"
+	father=2715
+	155.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=2722 #Gong Fang
+	}
+	240.1.1={
+		death=yes
+	}
+}
+2719={
+	name="Bao"
+	dynasty=2704
+	culture="han"
+	religion="confucian"
+	father=2716
+	152.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=2722 #Gong Fang
+	}
+	245.1.1={
+		death=yes
+	}
+}
+2720={
+	name="Na"
+	dynasty=2704
+	culture="han"
+	religion="confucian"
+	father=2716
+	154.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=2722 #Gong Fang
+	}
+	245.1.1={
+		death=yes
+	}
+}
+2721={
+	name="Lai"
+	dynasty=2704
+	culture="han"
+	religion="confucian"
+	father=2716
+	160.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=2722 #Gong Fang
+	}
+	245.1.1={
+		death=yes
+	}
+}
+2722={
+	name="Fang"
+	dynasty=2704
+	diplomacy=8
+	martial=2
+	stewardship=10
+	intrigue=8
+	learning=7
+	culture="han"
+	religion="confucian"
+	father=2716
+	trait="midas_touched"
+	trait="administrator"
+	trait="shrewd"
+	trait="quick"
+	trait="zealous"
+	trait="greedy"
+	trait="diligent"
+	trait="proud"
+	trait="deceitful"
+	trait="ambitious"
+	167.1.1={
+		birth=yes
+	}
+	245.1.1={
+		death=yes
+	}
+}
+2723={
+	name="Huan"
+	dynasty=2704
+	diplomacy=8
+	martial=10
+	stewardship=5
+	intrigue=5
+	learning=7
+	culture="han"
+	religion="confucian"
+	father=2716
+	trait="twin"
+	trait="brilliant_strategist"
+	trait="duelist"
+	trait="fair"
+	trait="brave"
+	trait="zealous"
+	trait="temperate"
+	trait="diligent"
+	trait="proud"
+	trait="robust"
+	trait="master_of_flame"
+	trait="organizer"
+	trait="inspiring_leader"
+	168.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=2722 #Gong Fang
+	}
+	245.1.1={
+		death=yes
+	}
+}
+2724={
+	name="Shuming"
+	female=yes
+	dynasty=2704
+	culture="han"
+	religion="confucian"
+	father=2716
+	trait="twin"
+	trait="fair"
+	168.1.1={
+		birth=yes
+	}
+	184.1.1={
+		employer=2722 #Gong Fang
+	}
+	245.1.1={
+		death=yes
+	}
+}
+
+#Jolt
+
+2725={
+	name="Jingjing"
+	dynasty=2
+	diplomacy=5
+	martial=8
+	stewardship=7
+	intrigue=8
+	learning=7
+	culture="han"
+	religion="confucian"
+	father=70 #Liu Wei
+	trait="martial_cleric"
+	trait="just"
+	trait="proud"
+	trait="cruel"
+	trait="shrewd"
+	trait="cynical"
+	trait="erudite"
+	trait="stubborn"
+	trait="temperate"
+	155.1.1={
+		birth=yes
+	}
+	250.1.1={
+		death=yes
+	}
+}

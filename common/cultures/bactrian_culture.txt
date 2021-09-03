@@ -1,0 +1,154 @@
+bactrian = {
+	graphical_cultures = { kushangfx turkishgfx easterngfx }
+	
+	yuezhi = {
+		graphical_cultures = { kushangfx turkishgfx easterngfx }
+		
+		horde = yes
+		
+		color = { 0.1 0.5 0.5 }
+		
+		male_names = {
+			Aeolus Agesiles Ahuramazda Aiyasi Akhshunwar
+			Aluoduo Anahita Ande Anemoi Apaosha Aredvi
+			Asha Atar Avalokitesvara
+			Bahram Bahua Bakarna Bala Bandhudatta Beijun
+			Bhadayasa Bochun Boddo Boyu Brahmi Buddhatala
+			Chenpan Chhu
+			Deos Deus Deva Devaputra Dharmaraksa
+			Fotudeng
+			Ganesha Goboziko Gokarna Grumbat
+			Hagamasha Hagana Hephaestus Heracles Heraios
+			Huvishka Hyperion
+			Jian Jiatenu Junjiu
+			Kadphises Kamuia Kandik Kanishka Kartikeya
+			Kharahostes Kharapallana Khingila Khushnavaz
+			Khvarenah Kidara Kipunada Kujula Kumara
+			Kumarajiva Kumaran Kumarayana Kungas
+			Lakhana Lala Liaka Lokaksema
+			Mahasena Mana Manah Manaobago Mani Manu
+			Mihirakula Mithra Mitian Murugan
+			Nandi Nongqi
+			Oesho Oisho
+			Pan Pashupati Pharro Poshui Pravarasena
+			Pushan
+			Qian
+			Rahula Rajuvula Rishti Rudra
+			Salanavira Sapadbizes Sehaul Senghui
+			Serapis Shaka Shiva Skanda Sodasa
+			Subramaniya Suryasoma Swami
+			Takto Tato Toramana Tunjina
+			Vanaspara Varhran Vashishka Vasishka
+			Vasudeva Vata Vayu Vayuvata Verethragna
+			Vespasi Vima Vimalaksa Vinayaditya
+			Wanruo Warahran Welnos
+			Xiumiduo
+			Yabgu Yama Yifu Yudhishthira
+			Zeus
+		}
+		female_names = {
+			Ahura Akasa Akieyemoti Anahita Ardochsho
+			Arta Ashi Ausera Ausra Ausrina Austaras
+			Austra Avestan Ayasia
+			Danu Dea Devi Devis Devas Dia Diaka Drvaspa
+			Durga
+			Eos
+			Hera Heusos Heustero
+			Jiva Jivaka Judith
+			Kasa Kidara Kushana
+			Mah Maonghah Maya Mithra
+			Nada Nadasi Nana
+			Paurwa Pleto Plethwih Pria Psyche
+			Saule Selene Shakti Shama Shiva Sol Soltse
+			Sulis
+			Theia Tishtrya
+			Vata Vayu Vayuvata
+			Yanrong Yasodhara
+			Zabbai Zenon
+		}
+		
+		founder_named_dynasties = no
+		from_dynasty_prefix = "of "
+		prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 35
+		mat_grf_name_chance = 15
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 35
+		mat_grm_name_chance = 15
+		mother_name_chance = 25
+
+		modifier = yuezhi_culture_modifier
+		nomadic_in_alt_start = yes
+		
+		allow_looting = yes
+	}
+	
+	jie = {
+		graphical_cultures = { kushangfx turkishgfx easterngfx }
+		
+		horde = yes
+		
+		color = { 0.1 0.5 0.5 }
+		
+		dynasty_name_first = yes
+		
+		male_names = {
+			Ande Atar
+			Bei Beijun Beixie Beizhi Boyu
+			Cao Chi Chimi Cun Cunzhou
+			De Dou
+			Fu Fule
+			Gu Gui
+			He Hong Hu
+			Jian Jiao Jin Jing Jun Junjiu Junxumi
+			Kong Kou Koumi
+			Liejiaomi Long
+			Mi Min Ming
+			Nandoumi Nimi
+			Pan
+			Qian
+			Rong
+			Shi Song
+			Wang Wei Wengguimi Wu Wujin Wujiutu
+			Xian Xie
+			Ye Yeyiyu Yi Yifu Yin Yong Yu Yuan Yuanguimi
+			Zhan Zhe Zhi Zhou Zhouhezhu Zhu Zun
+		}
+		female_names = {
+			An Anding Anxi
+			Bei Beixi
+			Cao Chi
+			Ding Dong Dou
+			Fu
+			Hu
+			Jie Jieyou Jing Jingzhu Jun
+			Shi
+			Wan Wang Wanshi
+			Xi Xijun
+			Yang Ying You
+			Zhang Zheng Zhu Zhuying
+		}
+		
+		founder_named_dynasties = no
+		prefix = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 35
+		mat_grf_name_chance = 15
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 35
+		mat_grm_name_chance = 15
+		mother_name_chance = 25
+
+		modifier = yuezhi_culture_modifier
+		nomadic_in_alt_start = yes
+		
+		allow_looting = yes
+	}
+}

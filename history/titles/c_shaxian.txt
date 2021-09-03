@@ -1,0 +1,17 @@
+# e_china
+1.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1.1.1={
+	liege=d_jiangxia
+}
+184.1.1={
+	holder=2700 #Long Wugui
+}
+220.3.6={
+	holder=2701 #Long Li
+}
+260.3.6={
+	holder=0 #JINDYNASTY
+}

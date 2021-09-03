@@ -1,0 +1,22 @@
+# c_wenzhou
+
+# County Title
+title = c_wenzhou
+
+# Settlements
+max_settlements = 4
+
+b_wenzhou = castle
+#b_wending = city
+#b_shaoxing = castle
+#b_yuecheng = city
+
+# Misc
+culture = minyue
+religion = animist
+terrain = mountain
+
+#History
+190.1.1={
+	b_wending = city
+}

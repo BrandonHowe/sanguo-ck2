@@ -1,0 +1,19 @@
+# c_xiangtan
+
+# County Title
+title = c_xiangtan
+
+# Settlements
+max_settlements = 4
+
+b_xiangtan = castle
+#b_gintei = city
+#b_furong = temple
+#b_ningxiang = city
+
+# Misc
+culture = shanyue
+religion = animist
+terrain = plains
+
+#History

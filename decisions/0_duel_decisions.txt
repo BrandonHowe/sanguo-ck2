@@ -1,0 +1,2073 @@
+decisions = {
+	battle_challenge = {
+		is_high_prio = yes
+		potential = {
+			NOT = { has_character_modifier = battlefield_fight }
+			OR = {
+				trait = duelist
+				trait = fate_duel
+				trait = berserker
+				trait = wroth
+				has_focus = focus_war
+				ai = no
+			}
+			OR = {
+				NOT = { has_character_flag = flag_battlefield_duel }
+				had_character_flag = { flag = flag_battlefield_duel days = 10 }
+			}
+			in_battle = yes
+		}
+		allow = {
+			custom_tooltip = {
+				text = "TOOLTIPbattle_challenge"
+				hidden_tooltip = {
+					OR = {
+						### ROOT WAR
+						AND = {
+							is_ruler = yes
+							war = yes
+							any_current_enemy = {
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_current_enemy = {
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+											is_allied_with = ROOT
+										}
+										in_revolt = yes
+										OR = {
+											AND = {
+												at_location = ROOT
+												can_battle_duel_trigger = yes
+											}
+											any_realm_character = {
+												at_location = ROOT
+												can_battle_duel_trigger = yes
+												NOR = {
+													character = ROOT
+													same_liege = ROOT
+													de_facto_liege = ROOT
+													top_liege = {
+														ROOT = {
+															top_liege = {
+																character = PREVPREV
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						### LIEGE WAR
+						any_liege = {
+							war = yes
+							any_current_enemy = {
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_current_enemy = {
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+											is_allied_with = ROOT
+										}
+										in_revolt = yes
+										OR = {
+											AND = {
+												at_location = ROOT
+												can_battle_duel_trigger = yes
+											}
+											any_realm_character = {
+												at_location = ROOT
+												can_battle_duel_trigger = yes
+												NOR = {
+													character = ROOT
+													same_liege = ROOT
+													de_facto_liege = ROOT
+													top_liege = {
+														ROOT = {
+															top_liege = {
+																character = PREVPREV
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						### RAID
+						any_independent_ruler = {
+							OR = {
+								AND = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+									OR = {
+										is_looting = yes
+										has_character_flag = raiding_adventurer
+									}
+								}
+								any_realm_character = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						any_playable_ruler = {
+							OR = {
+								AND = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+									OR = {
+										is_looting = yes
+										has_character_flag = raiding_adventurer
+									}
+								}
+								any_realm_character = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						#Revolters
+						any_independent_ruler = {
+							any_current_enemy = {
+								is_raider_or_rebel = yes
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+											is_allied_with = ROOT
+										}
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_character_modifier = {
+				name = battlefield_fight
+				duration = 20
+			}
+			hidden_tooltip = {
+				#REQUIRED event targets for setting up duel evaluation!
+				save_event_target_as = combatant_1 #the person issuing the duel...
+				pacifists_lose_piety_effect = yes
+				add_character_modifier = {
+					modifier = recent_duel_timer
+					duration = 90
+					hidden = yes
+				}
+				### Check for my enemies
+				if = {
+					limit = {
+						war = yes
+						any_current_enemy = {
+							OR = {
+								AND = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+								}
+								any_realm_character = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+								}
+							}
+						}
+					}
+					random_current_enemy = {
+						limit = {
+							OR = {
+								AND = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+								}
+								any_realm_character = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+								}
+							}
+						}
+						if = {
+							limit = {
+								at_location = ROOT
+								can_battle_duel_trigger = yes
+							}
+							save_event_target_as = combatant_2 #the target of the duel...
+							character_event = { id = HFP.10095 }
+							break = yes
+						}
+						random_realm_character = {
+							limit = {
+								at_location = ROOT
+								can_battle_duel_trigger = yes
+							}
+							preferred_limit = {
+								combat_rating = 10
+							}
+							save_event_target_as = combatant_2 #the target of the duel...
+							character_event = { id = HFP.10095 }
+							break = yes
+						}
+						random_army = {
+							limit = {
+								at_location = ROOT
+								unit_is_in_combat = yes
+							}
+							morale = -0.1
+						}
+					}
+				}
+				# Check if enemy has revolters
+				else_if = {
+					limit = {
+						war = yes
+						any_current_enemy = {
+							any_current_enemy = {
+								NOR = {
+									character = ROOT
+									same_liege = ROOT
+									de_facto_liege = ROOT
+									top_liege = {
+										ROOT = {
+											top_liege = {
+												character = PREVPREV
+											}
+										}
+									}
+									is_allied_with = ROOT
+								}
+								in_revolt = yes
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					random_current_enemy = {
+						limit = {
+							any_current_enemy = {
+								NOR = {
+									character = ROOT
+									same_liege = ROOT
+									de_facto_liege = ROOT
+									top_liege = {
+										ROOT = {
+											top_liege = {
+												character = PREVPREV
+											}
+										}
+									}
+									is_allied_with = ROOT
+								}
+								in_revolt = yes
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						random_current_enemy = {
+							limit = {
+								NOR = {
+									character = ROOT
+									same_liege = ROOT
+									de_facto_liege = ROOT
+									top_liege = {
+										ROOT = {
+											top_liege = {
+												character = PREVPREV
+											}
+										}
+									}
+									is_allied_with = ROOT
+								}
+								in_revolt = yes
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							if = {
+								limit = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+									}
+								}
+								preferred_limit = {
+									combat_rating = 10
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_army = {
+								limit = {
+									at_location = ROOT
+									unit_is_in_combat = yes
+								}
+								morale = -0.1
+							}
+						}
+					}
+				}
+				# Check if lieges have enemies
+				else_if = {
+					limit = {
+						any_liege = {
+							war = yes
+							any_current_enemy = {
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+								}
+							}
+						}
+					}
+					any_liege = {
+						limit = {
+							war = yes
+							any_current_enemy = {
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+								}
+							}
+						}
+						random_current_enemy = {
+							limit = {
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+								}
+							}
+							if = {
+								limit = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+								}
+								preferred_limit = {
+									combat_rating = 10
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_army = {
+								limit = {
+									at_location = ROOT
+									unit_is_in_combat = yes
+								}
+								morale = -0.1
+							}
+						}
+					}
+				}
+				# Check if lieges have enemies that have revolters
+				else_if = {
+					limit = {
+						any_liege = {
+							war = yes
+							any_current_enemy = {
+								any_current_enemy = {
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+									in_revolt = yes
+									OR = {
+										AND = {
+											at_location = ROOT
+											can_battle_duel_trigger = yes
+										}
+										any_realm_character = {
+											at_location = ROOT
+											can_battle_duel_trigger = yes
+											NOR = {
+												character = ROOT
+												same_liege = ROOT
+												de_facto_liege = ROOT
+												top_liege = {
+													ROOT = {
+														top_liege = {
+															character = PREVPREV
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					any_liege = {
+						limit = {
+							war = yes
+							any_current_enemy = {
+								any_current_enemy = {
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+									in_revolt = yes
+									OR = {
+										AND = {
+											at_location = ROOT
+											can_battle_duel_trigger = yes
+										}
+										any_realm_character = {
+											at_location = ROOT
+											can_battle_duel_trigger = yes
+											NOR = {
+												character = ROOT
+												same_liege = ROOT
+												de_facto_liege = ROOT
+												top_liege = {
+													ROOT = {
+														top_liege = {
+															character = PREVPREV
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						any_current_enemy = {
+							limit = {
+								any_current_enemy = {
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+									in_revolt = yes
+									OR = {
+										AND = {
+											at_location = ROOT
+											can_battle_duel_trigger = yes
+										}
+										any_realm_character = {
+											at_location = ROOT
+											can_battle_duel_trigger = yes
+											NOR = {
+												character = ROOT
+												same_liege = ROOT
+												de_facto_liege = ROOT
+												top_liege = {
+													ROOT = {
+														top_liege = {
+															character = PREVPREV
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							random_current_enemy = {
+								limit = {
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+									in_revolt = yes
+									OR = {
+										AND = {
+											at_location = ROOT
+											can_battle_duel_trigger = yes
+										}
+										any_realm_character = {
+											at_location = ROOT
+											can_battle_duel_trigger = yes
+											NOR = {
+												character = ROOT
+												same_liege = ROOT
+												de_facto_liege = ROOT
+												top_liege = {
+													ROOT = {
+														top_liege = {
+															character = PREVPREV
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+								if = {
+									limit = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+								random_realm_character = {
+									limit = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+										}
+									}
+									preferred_limit = {
+										combat_rating = 10
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+								random_army = {
+									limit = {
+										at_location = ROOT
+										unit_is_in_combat = yes
+									}
+									morale = -0.1
+								}
+							}
+						}
+					}
+				}
+				# Check for independent raiders
+				else_if = {
+					limit = {
+						any_independent_ruler = {
+							is_raider_or_rebel = yes
+							OR = {
+								AND = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+								}
+								any_realm_character = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					random_independent_ruler = {
+						limit = {
+							is_raider_or_rebel = yes
+							OR = {
+								AND = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+								}
+								any_realm_character = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						if = {
+							limit = {
+								at_location = ROOT
+								can_battle_duel_trigger = yes
+							}
+							save_event_target_as = combatant_2 #the target of the duel...
+							character_event = { id = HFP.10095 }
+							break = yes
+						}
+						random_realm_character = {
+							limit = {
+								at_location = ROOT
+								can_battle_duel_trigger = yes
+								NOR = {
+									character = ROOT
+									same_liege = ROOT
+									de_facto_liege = ROOT
+									top_liege = {
+										ROOT = {
+											top_liege = {
+												character = PREVPREV
+											}
+										}
+									}
+								}
+							}
+							preferred_limit = {
+								combat_rating = 10
+							}
+							save_event_target_as = combatant_2 #the target of the duel...
+							character_event = { id = HFP.10095 }
+							break = yes
+						}
+						random_army = {
+							limit = {
+								at_location = ROOT
+								unit_is_in_combat = yes
+							}
+							morale = -0.1
+						}
+					}
+				}
+				# Check for playable raiders
+				else_if = {
+					limit = {
+						any_playable_ruler = {
+							is_raider_or_rebel = yes
+							OR = {
+								AND = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+								}
+								any_realm_character = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					random_playable_ruler = {
+						limit = {
+							is_raider_or_rebel = yes
+							OR = {
+								AND = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+										is_allied_with = ROOT
+									}
+								}
+								any_realm_character = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						if = {
+							limit = {
+								at_location = ROOT
+								can_battle_duel_trigger = yes
+							}
+							save_event_target_as = combatant_2 #the target of the duel...
+							character_event = { id = HFP.10095 }
+							break = yes
+						}
+						random_realm_character = {
+							limit = {
+								at_location = ROOT
+								can_battle_duel_trigger = yes
+								NOR = {
+									character = ROOT
+									same_liege = ROOT
+									de_facto_liege = ROOT
+									top_liege = {
+										ROOT = {
+											top_liege = {
+												character = PREVPREV
+											}
+										}
+									}
+								}
+							}
+							preferred_limit = {
+								combat_rating = 10
+							}
+							save_event_target_as = combatant_2 #the target of the duel...
+							character_event = { id = HFP.10095 }
+							break = yes
+						}
+						random_army = {
+							limit = {
+								at_location = ROOT
+								unit_is_in_combat = yes
+							}
+							morale = -0.1
+						}
+					}
+				}
+				# Check for independent revolters
+				else_if = {
+					limit = {
+						any_independent_ruler = {
+							any_current_enemy = {
+								is_raider_or_rebel = yes
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+											is_allied_with = ROOT
+										}
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					random_independent_ruler = {
+						limit = {
+							any_current_enemy = {
+								is_raider_or_rebel = yes
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+											is_allied_with = ROOT
+										}
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+						random_current_enemy = {
+							limit = {
+								is_raider_or_rebel = yes
+								OR = {
+									AND = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+											is_allied_with = ROOT
+										}
+									}
+									any_realm_character = {
+										at_location = ROOT
+										can_battle_duel_trigger = yes
+										NOR = {
+											character = ROOT
+											same_liege = ROOT
+											de_facto_liege = ROOT
+											top_liege = {
+												ROOT = {
+													top_liege = {
+														character = PREVPREV
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							if = {
+								limit = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									at_location = ROOT
+									can_battle_duel_trigger = yes
+									NOR = {
+										character = ROOT
+										same_liege = ROOT
+										de_facto_liege = ROOT
+										top_liege = {
+											ROOT = {
+												top_liege = {
+													character = PREVPREV
+												}
+											}
+										}
+									}
+								}
+								preferred_limit = {
+									combat_rating = 10
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_army = {
+								limit = {
+									at_location = ROOT
+									unit_is_in_combat = yes
+								}
+								morale = -0.1
+							}
+						}
+					}
+				}
+				
+				# No DUEL Target found
+				character_event = { id = challenge.5 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1 #Percent
+			}
+			modifier = {
+				factor = 0.85
+				age = 40
+			}
+			modifier = {
+				factor = 0.85
+				age = 50
+			}
+			modifier = {
+				factor = 0.85
+				age = 60
+			}
+			modifier = {
+				factor = 0.4
+				tier = BARON
+			}
+			modifier = {
+				factor = 0.2
+				tier = COUNT
+			}
+			modifier = {
+				factor = 0.1
+				tier = DUKE
+			}
+			modifier = {
+				factor = 0.05
+				tier = KING
+			}
+			modifier = {
+				factor = 0
+				tier = EMPEROR
+			}
+			modifier = {
+				factor = 0.5
+				trait = destined
+				NOT = { 
+					trait = fate_duel
+					trait = duelist
+				}
+			}
+			modifier = {
+				factor = 0.1
+				trait = back_seat_leader
+			}
+			modifier = {
+				factor = 5
+				trait = fate_duel
+			}
+			modifier = {
+				factor = 1.5
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				trait = strong
+			}
+			modifier = {
+				factor = 1.5
+				trait = tall
+			}
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					trait = infirm
+					trait = blinded
+				}
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				trait = maimed
+			}
+			modifier = {
+				factor = 0.1
+				trait = wounded
+			}
+			modifier = {
+				factor = 0.1
+				trait = craven
+			}
+			modifier = {
+				factor = 0.25
+				trait = patient
+			}
+		}
+	}
+	
+	siege_challenge = {
+		is_high_prio = yes
+		potential = {
+			NOT = { has_character_modifier = battlefield_fight }
+			OR = {
+				trait = duelist
+				trait = fate_duel
+				trait = berserker
+				trait = wroth
+				has_focus = focus_war
+				ai = no
+			}
+			OR = {
+				is_female = no
+				AND = {
+					is_female = yes
+					OR = {
+						in_command = yes
+						culture_group = mongol
+						culture_group = yue
+						culture_group = tibetan_group
+						culture_group = man
+					}
+				}
+			}
+			is_adult = yes
+			OR = {
+				in_siege = yes
+				any_demesne_province = {
+					any_province_holding = {
+						has_siege = yes
+					}
+					ROOT = { at_location = PREV }
+				}
+			}
+			NOT = { in_battle = yes }
+			OR = {
+				NOT = { has_character_flag = flag_battlefield_duel }
+				had_character_flag = { flag = flag_battlefield_duel days = 10 }
+			}
+		}
+		allow = {
+			custom_tooltip = {
+				text = "TOOLTIPsiege_challenge"
+				hidden_tooltip = {
+					OR = {
+						in_siege = yes
+						AND = {
+							any_demesne_province = {
+								any_province_holding = {
+									has_siege = yes
+								}
+								ROOT = { at_location = PREV }
+							}
+							OR = {
+								AND = {
+									war = yes
+									any_current_enemy = {
+										OR = {
+											AND = {
+												at_location = ROOT
+												can_siege_duel_trigger = yes
+											}
+											any_realm_character = {
+												at_location = ROOT
+												can_siege_duel_trigger = yes
+											}
+										}
+									}
+								}
+								any_liege = {
+									war = yes
+									any_current_enemy = {
+										OR = {
+											AND = {
+												at_location = ROOT
+												can_siege_duel_trigger = yes
+											}
+											any_realm_character = {
+												at_location = ROOT
+												can_siege_duel_trigger = yes
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_character_modifier = {
+				name = battlefield_fight
+				duration = 20
+			}
+			#REQUIRED event targets for setting up duel evaluation!
+			save_event_target_as = combatant_1 #the person issuing the duel...
+			pacifists_lose_piety_effect = yes
+			add_character_modifier = {
+				modifier = recent_duel_timer
+				duration = 90
+				hidden = yes
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						siege = {
+							enemy = {
+								leader = {
+									at_location = ROOT
+									can_siege_duel_trigger = yes
+								}
+							}
+						}
+					}
+					siege = {
+						enemy = {
+							leader = {
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						siege = {
+							enemy = {
+								leader = {
+									any_realm_character = {
+										at_location = ROOT
+										can_siege_duel_trigger = yes
+									}
+								}
+							}
+						}
+					}
+					siege = {
+						enemy = {
+							leader = {
+								random_realm_character = {
+									limit = {
+										at_location = ROOT
+										can_siege_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+							}
+						}
+					}
+				}
+				
+				if = {
+					limit = { siege = { is_attacker = yes } }
+					siege = {
+						enemy = {
+							leader = {
+								any_liege = {
+									limit = {
+										war_with = ROOT
+										NOT = {
+											has_landed_title = e_rebels
+										}
+									}
+									random_realm_character = {
+										limit = {
+											at_location = ROOT
+											can_siege_duel_trigger = yes
+										}
+										save_event_target_as = combatant_2 #the target of the duel...
+										character_event = { id = HFP.10095 }
+										break = yes
+									}
+									random_realm_character = {
+										limit = {
+											at_location = ROOT
+											in_command = no
+											is_councillor = no
+											is_landed = no
+											can_siege_duel_trigger = yes
+										}
+										save_event_target_as = combatant_2 #the target of the duel...
+										character_event = { id = HFP.10095 }
+										break = yes
+									}
+								}
+								random_realm_character = {
+									limit = {
+										at_location = ROOT
+										can_siege_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+								random_realm_character = {
+									limit = {
+										at_location = ROOT
+										in_command = no
+										is_councillor = no
+										is_landed = no
+										can_siege_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+							}
+						}
+					}
+					if = {
+						limit = { war = yes }
+						random_current_enemy = {
+							if = {
+								limit = {
+									at_location = ROOT
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									at_location = ROOT
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									at_location = ROOT
+									in_command = no
+									is_councillor = no
+									is_landed = no
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+						}
+					}
+					if = {
+						limit = {
+							any_liege = {
+								war = yes
+							}
+						}
+						any_liege = {
+							limit = { war = yes }
+							random_current_enemy = {
+								if = {
+									limit = {
+										at_location = ROOT
+										can_siege_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+								random_realm_character = {
+									limit = {
+										at_location = ROOT
+										can_siege_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+								random_realm_character = {
+									limit = {
+										at_location = ROOT
+										in_command = no
+										is_councillor = no
+										is_landed = no
+										can_siege_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+							}
+						}
+					}
+					if = {
+						limit = {
+							location = {
+								owner = {
+									OR = {
+										war_with = ROOT
+										any_liege = {
+											war_with = ROOT
+										}
+									}
+								}
+							}
+						}
+						location = {
+							owner = {
+								if = {
+									limit = {
+										at_location = ROOT
+										can_siege_duel_trigger = yes
+										capital_holding = { controller = { character = PREVPREV } }
+										capital_scope = { ROOT = { at_location = PREV } }
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+								random_realm_character = {
+									limit = {
+										at_location = ROOT
+										can_siege_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+								random_realm_character = {
+									limit = {
+										at_location = ROOT
+										in_command = no
+										is_councillor = no
+										is_landed = no
+										can_siege_duel_trigger = yes
+									}
+									save_event_target_as = combatant_2 #the target of the duel...
+									character_event = { id = HFP.10095 }
+									break = yes
+								}
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							AND = {
+								war = yes
+								any_current_enemy = {
+									any_realm_province = {
+										any_province_holding = {
+											has_siege = yes
+											controlled_by = ROOT
+											ROOT = {
+												OR = {
+													at_location = PREVPREV
+													AND = {
+														in_command = no
+														is_councillor = no
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							any_realm_province = {
+								any_province_holding = {
+									has_siege = yes
+									is_occupied = yes
+									ROOT = {
+										in_siege = yes
+										at_location = PREVPREV
+									}
+								}
+							}
+							any_liege = {
+								war = yes
+								OR = {
+									any_current_enemy = {
+										OR = {
+											AND = {
+												OR = {
+													at_location = ROOT
+													AND = {
+														in_command = no
+														is_councillor = no
+														location = {
+															controlled_by = ROOT
+														}
+													}
+												}
+												can_siege_duel_trigger = yes
+											}
+											any_realm_character = {
+												OR = {
+													at_location = ROOT
+													AND = {
+														in_command = no
+														is_councillor = no
+														location = {
+															controlled_by = ROOT
+														}
+													}
+												}
+												can_siege_duel_trigger = yes
+											}
+										}
+									}
+									any_realm_province = {
+										any_province_holding = {
+											has_siege = yes
+											is_occupied = yes
+											ROOT = {
+												in_siege = yes
+												at_location = PREVPREV
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					if = {
+						limit = { war = yes }
+						random_current_enemy = {
+							if = {
+								limit = {
+									OR = {
+										at_location = ROOT
+										AND = {
+											in_command = no
+											is_councillor = no
+											location = {
+												controlled_by = ROOT
+											}
+										}
+									}
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									at_location = ROOT
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									in_command = no
+									is_councillor = no
+									location = {
+										controlled_by = ROOT
+									}
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+						}
+						random_realm_province = {
+							limit = {
+								any_province_holding = {
+									has_siege = yes
+									is_occupied = yes
+									ROOT = {
+										in_siege = yes
+										at_location = PREVPREV
+									}
+								}
+							}
+							random_province_holding = {
+								limit = {
+									has_siege = yes
+									is_occupied = yes
+									ROOT = {
+										in_siege = yes
+										at_location = PREVPREV
+									}
+								}
+								controller = {
+									if = {
+										limit = {
+											OR = {
+												at_location = ROOT
+												AND = {
+													in_command = no
+													is_councillor = no
+												}
+											}
+											can_siege_duel_trigger = yes
+										}
+										save_event_target_as = combatant_2 #the target of the duel...
+										character_event = { id = HFP.10095 }
+										break = yes
+									}
+									random_realm_character = {
+										limit = {
+											at_location = ROOT
+											can_siege_duel_trigger = yes
+										}
+										save_event_target_as = combatant_2 #the target of the duel...
+										character_event = { id = HFP.10095 }
+										break = yes
+									}
+									random_realm_character = {
+										limit = {
+											in_command = no
+											is_councillor = no
+											can_siege_duel_trigger = yes
+										}
+										save_event_target_as = combatant_2 #the target of the duel...
+										character_event = { id = HFP.10095 }
+										break = yes
+									}
+								}
+							}
+						}
+					}
+					any_liege = {
+						limit = {
+							war = yes
+						}
+						random_current_enemy = {
+							if = {
+								limit = {
+									OR = {
+										at_location = ROOT
+										AND = {
+											in_command = no
+											is_councillor = no
+											location = {
+												controlled_by = ROOT
+											}
+										}
+									}
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									at_location = ROOT
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+							random_realm_character = {
+								limit = {
+									in_command = no
+									is_councillor = no
+									location = {
+										controlled_by = ROOT
+									}
+									can_siege_duel_trigger = yes
+								}
+								save_event_target_as = combatant_2 #the target of the duel...
+								character_event = { id = HFP.10095 }
+								break = yes
+							}
+						}
+						random_realm_province = {
+							limit = {
+								any_province_holding = {
+									has_siege = yes
+									is_occupied = yes
+									ROOT = {
+										in_siege = yes
+										at_location = PREVPREV
+									}
+								}
+							}
+							random_province_holding = {
+								limit = {
+									has_siege = yes
+									is_occupied = yes
+									ROOT = {
+										in_siege = yes
+										at_location = PREVPREV
+									}
+								}
+								controller = {
+									if = {
+										limit = {
+											OR = {
+												at_location = ROOT
+												AND = {
+													in_command = no
+													is_councillor = no
+												}
+											}
+											can_siege_duel_trigger = yes
+										}
+										save_event_target_as = combatant_2 #the target of the duel...
+										character_event = { id = HFP.10095 }
+										break = yes
+									}
+									random_realm_character = {
+										limit = {
+											at_location = ROOT
+											can_siege_duel_trigger = yes
+										}
+										save_event_target_as = combatant_2 #the target of the duel...
+										character_event = { id = HFP.10095 }
+										break = yes
+									}
+									random_realm_character = {
+										limit = {
+											in_command = no
+											is_councillor = no
+											can_siege_duel_trigger = yes
+										}
+										save_event_target_as = combatant_2 #the target of the duel...
+										character_event = { id = HFP.10095 }
+										break = yes
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				siege = {
+					enemy = {
+						morale = -0.1
+					}
+				}
+				character_event = { id = challenge.5 }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0.1 #Percent
+			}
+			modifier = {
+				factor = 0.85
+				age = 40
+			}
+			modifier = {
+				factor = 0.85
+				age = 50
+			}
+			modifier = {
+				factor = 0.85
+				age = 60
+			}
+			modifier = {
+				factor = 0.4
+				tier = BARON
+			}
+			modifier = {
+				factor = 0.2
+				tier = COUNT
+			}
+			modifier = {
+				factor = 0.1
+				tier = DUKE
+			}
+			modifier = {
+				factor = 0.05
+				tier = KING
+			}
+			modifier = {
+				factor = 0
+				tier = EMPEROR
+			}
+			modifier = {
+				factor = 0.5
+				trait = destined
+				NOT = { 
+					trait = fate_duel
+					trait = duelist
+				}
+			}
+			modifier = {
+				factor = 0.1
+				trait = back_seat_leader
+			}
+			modifier = {
+				factor = 5
+				trait = fate_duel
+			}
+			modifier = {
+				factor = 1.5
+				trait = brave
+			}
+			modifier = {
+				factor = 2
+				trait = proud
+			}
+			modifier = {
+				factor = 1.5
+				trait = wroth
+			}
+			modifier = {
+				factor = 1.5
+				trait = strong
+			}
+			modifier = {
+				factor = 1.5
+				trait = tall
+			}
+			#Avoid fights
+			modifier = {
+				factor = 0
+				OR = {
+					trait = infirm
+					trait = blinded
+				}
+			}
+			modifier = {
+				factor = 0.1
+				is_ill = yes
+			}
+			modifier = {
+				factor = 0.1
+				trait = maimed
+			}
+			modifier = {
+				factor = 0.1
+				trait = wounded
+			}
+			modifier = {
+				factor = 0.1
+				trait = craven
+			}
+			modifier = {
+				factor = 0.25
+				trait = patient
+			}
+			modifier = {
+				factor = 0.1
+				siege = {
+					is_attacker = no
+				}
+			}
+			modifier = {
+				factor = 0.1
+				in_command = no
+			}
+		}
+	}
+}

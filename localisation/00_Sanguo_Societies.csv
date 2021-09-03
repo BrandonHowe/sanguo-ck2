@@ -1,0 +1,270 @@
+#Taoists,,,,,
+hermetics;the Way of Tao Society;;;;;;;;;;;;;x,,,,,
+hermetics_desc;Taoists believe that there are deeply hidden secrets about this world that only the worthy can uncover. As a member of the Way of Tao Society you will seek the truth in the stars and planets, through diligent experimentation, and by careful interpretation of ancient texts and symbols.;;;;;;;;;;;;;x,,,
+hermetics_leader_desc;The most respected master of the Way of Tao Society, possession an understanding of the world that others can only aspire to.;;;;;;;;;;;;;x,,,,
+hermetics_rank_1_female;Neophyte;Néophyte;Neophyt;;neófita;;;;;;;;;x,,,,,
+hermetics_rank_2_female;Initiate;Initiée;Novizin;;iniciada;;;;;;;;;x,,,,,
+hermetics_rank_3_female;Adept;Adepte;Adeptin;;adepta;;;;;;;;;x,,,,,
+hermetics_rank_4_female;Master;;;;;;;;;;;;;x,,,,,
+hermetics_rank_1_male;Neophyte;Néophyte;Neophyt;;neófito;;;;;;;;;x,,,,,
+hermetics_rank_2_male;Initiate;Initié;Novize;;iniciado;;;;;;;;;x,,,,,
+hermetics_rank_3_male;Adept;Adepte;Adept;;adepto;;;;;;;;;x,,,,,
+hermetics_rank_4_male;Master;;;;;;;;;;;;;x,,,,,
+hermetics_write_magnum_opus;Write a Treatise;;;;;;;;;;;;;x,,,,,
+hermetics_write_magnum_opus_desc;Record your life's work for posterity in an encrypted Treatise.;;;;;;;;;;;;;x,,,,,
+hermetics_wrote_magnum_opus_cd_tooltip;§Y[Root.GetTitledFirstName]§! has not already written a Treatise\n;;;;;;;;;;;;;x,,,,,
+hermetics_wrote_magnum_opus_duplicate_ritual_theurgy_tooltip;Does NOT already own a Treatise on ritualistic Theurgy\n;;;;;;;;;;;;;x,,,,,
+hermetics_wrote_magnum_opus_duplicate_contemplative_theurgy_tooltip;Does NOT already own a Treatise on contemplative Theurgy\n;;;;;;;;;;;;;x,,,,,
+hermetics_wrote_magnum_opus_duplicate_stellar_astrology_tooltip;Does NOT already own a Treatise on stellar Astrology\n;;;;;;;;;;;;;x,,,,,
+hermetics_wrote_magnum_opus_duplicate_planetary_astrology_tooltip;Does NOT already own a Treatise on planetary Astrology\n;;;;;;;;;;;;;x,,,,,
+hermetics_wrote_magnum_opus_duplicate_panacea_alchemy_tooltip;Does NOT already own a Treatise on alchemical Universal Panacea\n;;;;;;;;;;;;;x,,,,,
+hermetics_wrote_magnum_opus_duplicate_transmutation_alchemy_tooltip;Does NOT already own a Treatise on transmutative Alchemy\n;;;;;;;;;;;;;x,,,,,
+writing_magnum_opus;Writing Treatise;;;;;;;;;;;;;x,,,,,
+writing_magnum_opus_desc;This character is writing a Treatise.;;;;;;;;;;;;;x,,,,,
+choose_hermetic_art;Choose Taoist Art;;;;;;;;;;;;;x,,,,,
+choose_hermetic_art_desc;Choose to focus on one of the three arts within §Y[Root.Society.GetName]§!. Doing so will allow you to choose a lifestyle trait.;Choisir de se concentrer sur des trois arts §Y[Root.GetSocietyNameDuDelaDes]§!. Le faire permet de choisir un trait de style de vie.;""Wählt eine der drei Künste innerhalb des ""§Y[Root.Society.GetName]§!""-Zirkels aus. Anschließend könnt Ihr einen Lebensstil als neues besonderes Merkmal annehmen."";;Elige a cuál de las tres artes de §Y[Root.Society.GetName]§! te dedicarás. De ese modo", elegirás un rasgo de estilo de vida.;;;;;;;;;x,,,,
+choose_hermetic_art_power_desc;Enables §Gright-clicking§! on your character's portrait in order choose one of the three different arts within the Taoists, allowing you to decide on your lifestyle.;;;;;;;;;;;;;x,,,,,
+choose_hermetic_art_allow_tooltip;Is allowed to choose a Taoist Art at this time\n;;;;;;;;;;;;;x,,,,,
+start_constructing_laboratory_tooltip;[Root.GetFullName] starts the construction of a Laboratory.;[Root.GetFullName] commence la construction d'un laboratoire.;[Root.GetFullName] nimmt den Bau eines Labors in Angriff.;;[Root.GetFullName] comienza a construir un laboratorio.;;;;;;;;;x,,,,,
+currency_name_hermetics;Esoteric Knowledge;Savoir ésotérique;Esoterisches Wissen;;Conocimiento esotérico;;;;;;;;;x,,,,,
+build_laboratory;Construct Laboratory;Construire un laboratoire;Labor bauen;;Construir laboratorio;;;;;;;;;x,,,,,
+build_laboratory_desc;Constructing your own laboratory will help you in the various experiments needed to delve into the deeper truths of creation. It can however easily get very costly...;Construire votre propre laboratoire vous aidera dans les différentes expériences nécessaires pour fouiller dans les vérités plus profondes de la création. Cela peut cependant facilement devenir très coûteux...;Euer eigenes Labor zu bauen, wird Euch bei den verschiedenen Experimenten helfen, die vonnöten sind, um die tieferen Wahrheiten der Schöpfung zu ergründen. Es kann jedoch leicht sehr kostspielig werden...;;Si construyes tu propio laboratorio, podrás realizar los experimentos necesarios para ahondar en la verdad sobre la creación. Sin embargo, es fácil que se suba mucho de precio...;;;;;;;;;x
+#SOCIETY,,,,,,,
+#Confucian,,,,,,,
+secret_religious_society_confucian;[GetReligiousCommunityName_confucian];[GetReligiousCommunityName_confucian];[GetReligiousCommunityName_confucian];;[GetReligiousCommunityName_confucian];;;;;;;;;x
+secret_religious_society_confucian_desc;[GetReligiousSocietyDesc_confucian];[GetReligiousSocietyDesc_confucian];[GetReligiousSocietyDesc_confucian];;[GetReligiousSocietyDesc_confucian];;;;;;;;;x
+secret_religious_society_REAL_confucian;The Scholars of Confucianism;;;;;;;;;;;;;x
+secret_religious_society_confucian_desc_REAL;Followers of Confucianism revere Morality, the underlying natural order of the Universe – the active expression of Confucianism for an individual is Ren, the way of morality. Adherents seek the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_confucian_community;Secret [confucian.GetName] Community;Communauté [confucian.GetName] secrète;Geheime Gemeinschaft: [confucian.GetName];;Comunidad Secreta: [confucian.GetName];;;;;;;;;x
+secret_confucian_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_confucian_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_confucian_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_confucian_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_confucian_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_confucian_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_confucian_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_confucian_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_confucian_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_confucian_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_confucian_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Legal,,,,,,,
+secret_religious_society_legal;[GetReligiousCommunityName_legal];[GetReligiousCommunityName_legal];[GetReligiousCommunityName_legal];;[GetReligiousCommunityName_legal];;;;;;;;;x
+secret_religious_society_legal_desc;[GetReligiousSocietyDesc_legal];[GetReligiousSocietyDesc_legal];[GetReligiousSocietyDesc_legal];;[GetReligiousSocietyDesc_legal];;;;;;;;;x
+secret_religious_society_REAL_legal;The Scholars of Legalism;;;;;;;;;;;;;x
+secret_religious_society_legal_desc_REAL;Followers of Legalism revere Justice, the underlying natural order of the Universe – the active expression of Legalism for an individual is Fa, the way of law. Adherents seek the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_legal_community;Secret [legal.GetName] Community;Communauté [legal.GetName] secrète;Geheime Gemeinschaft: [legal.GetName];;Comunidad Secreta: [legal.GetName];;;;;;;;;x
+secret_legal_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_legal_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_legal_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_legal_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_legal_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_legal_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_legal_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_legal_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_legal_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_legal_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_legal_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Folk,,,,,,,
+secret_religious_society_folk;[GetReligiousCommunityName_folk];[GetReligiousCommunityName_folk];[GetReligiousCommunityName_folk];;[GetReligiousCommunityName_folk];;;;;;;;;x
+secret_religious_society_folk_desc;[GetReligiousSocietyDesc_folk];[GetReligiousSocietyDesc_folk];[GetReligiousSocietyDesc_folk];;[GetReligiousSocietyDesc_folk];;;;;;;;;x
+secret_religious_society_REAL_folk;The Scholars of Folkism;;;;;;;;;;;;;x
+secret_religious_society_folk_desc_REAL;Followers of Folkism revere Tradition, the underlying natural order of the Universe – the active expression of Folkism for an individual is Shen, the way of gods. Adherents seek the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_folk_community;Secret [folk.GetName] Community;Communauté [folk.GetName] secrète;Geheime Gemeinschaft: [folk.GetName];;Comunidad Secreta: [folk.GetName];;;;;;;;;x
+secret_folk_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_folk_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_folk_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_folk_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_folk_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_folk_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_folk_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_folk_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_folk_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_folk_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_folk_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Taiping,,,,,,,
+secret_religious_society_taiping;[GetReligiousCommunityName_taiping];[GetReligiousCommunityName_taiping];[GetReligiousCommunityName_taiping];;[GetReligiousCommunityName_taiping];;;;;;;;;x
+secret_religious_society_taiping_desc;[GetReligiousSocietyDesc_taiping];[GetReligiousSocietyDesc_taiping];[GetReligiousSocietyDesc_taiping];;[GetReligiousSocietyDesc_taiping];;;;;;;;;x
+secret_religious_society_REAL_taiping;The Scholars of Taiping;;;;;;;;;;;;;x
+secret_religious_society_taiping_desc_REAL;Followers of Taiping revere Tao, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_taiping_community;Secret [taiping.GetName] Community;Communauté [taiping.GetName] secrète;Geheime Gemeinschaft: [taiping.GetName];;Comunidad Secreta: [taiping.GetName];;;;;;;;;x
+secret_taiping_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_taiping_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_taiping_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_taiping_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_taiping_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_taiping_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_taiping_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_taiping_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_taiping_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_taiping_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_taiping_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Tianshi,,,,,,,
+secret_religious_society_tianshi;[GetReligiousCommunityName_tianshi];[GetReligiousCommunityName_tianshi];[GetReligiousCommunityName_tianshi];;[GetReligiousCommunityName_tianshi];;;;;;;;;x
+secret_religious_society_tianshi_desc;[GetReligiousSocietyDesc_tianshi];[GetReligiousSocietyDesc_tianshi];[GetReligiousSocietyDesc_tianshi];;[GetReligiousSocietyDesc_tianshi];;;;;;;;;x
+secret_religious_society_REAL_tianshi;The Scholars of Tianshi;;;;;;;;;;;;;x
+secret_religious_society_tianshi_desc_REAL;Followers of Tianshi revere Tao, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_tianshi_community;Secret [tianshi.GetName] Community;Communauté [tianshi.GetName] secrète;Geheime Gemeinschaft: [tianshi.GetName];;Comunidad Secreta: [tianshi.GetName];;;;;;;;;x
+secret_tianshi_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_tianshi_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_tianshi_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_tianshi_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_tianshi_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_tianshi_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_tianshi_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_tianshi_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_tianshi_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_tianshi_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_tianshi_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Buddhist,,,,,,,
+secret_religious_society_buddhist;[GetReligiousCommunityName_buddhist];[GetReligiousCommunityName_buddhist];[GetReligiousCommunityName_buddhist];;[GetReligiousCommunityName_buddhist];;;;;;;;;x
+secret_religious_society_buddhist_desc;[GetReligiousSocietyDesc_buddhist];[GetReligiousSocietyDesc_buddhist];[GetReligiousSocietyDesc_buddhist];;[GetReligiousSocietyDesc_buddhist];;;;;;;;;x
+secret_religious_society_REAL_buddhist;The Eightfold Path;Sentier Octuple;Achtfacher Pfad;;el camino óctuple;;;;;;;;;x
+secret_religious_society_buddhist_desc_REAL;Those who secretly follow the teachings of Buddha focus on asceticism and distancing themselves of worldly possessions as much as they can without notice. A belief in rebirth into the wheel of life and death makes them distance themselves of all cravings, which bring only pain. There are those who would rather plant a good karmic seed through rebirth than renounce these teachings, as an open profession of faith is not always needed to grow closer to Nirvana.;Ceux qui suivent secrètement les enseignements de Bouddha se concentrent sur l'ascétisme et s'éloignent des possessions de ce monde autant qu'ils le peuvent et sans délai. La croyance en la renaissance à travers la roue de la vie et de la mort les fait s'éloigner de toutes les envies qui n'apportent que la souffrance. Il y a ceux qui préfèrent planter une bonne graine karmique à travers la renaissance que de renoncer à ces enseignements, puisque la profession de foi n'est pas toujours nécessaire pour se rapprocher du Nirvana.;Jene, die heimlich den Lehren von Buddha folgen, konzentrieren sich auf die Askese und das Entsagen von weltlichen Besitztümern, soweit dies möglich ist, ohne dass es auffällt. Der Glaube an die Wiedergeburt im Kreislauf von Leben und Tod bringt sie dazu, allen Begierden zu entsagen, die nur zu Leid führen. Manche ziehen es vor, lieber durch Wiedergeburt eine gute karmische Saat zu säen statt sich von diesen Lehren abzuwenden, da eine offene Bekennung zu diesem Glauben immer vorausgesetzt wird, um sich dem Nirwana zu nähern.;;Quienes siguen en secreto las enseñanzas de Buda se centran en el ascetismo y en distanciarse de las posesiones terrenales todo lo posible sin levantar sospechas. Creer en que renacerán en la rueda de la vida y la muerte los distancia de todo deseo, que trae sufrimiento. Hay quienes prefieren plantar una buena semilla del karma a través de la reencarnación que renunciar a estar enseñanzas, pues profesar abiertamente su fe no siempre es necesario para acercarse al nirvana.;;;;;;;;;x
+secret_buddhist_community;Secret [buddhist.GetName] Community;Communauté [buddhist.GetName] secrète;Geheime Gemeinschaft: [buddhist.GetName];;Comunidad Secreta: [buddhist.GetName];;;;;;;;;x
+secret_buddhist_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;Des fidèles ont secrètement formé une communauté dans cette province. Ils y convertissent les autres personnes et protègent les leurs.;In dieser Provinz haben sich Gläubige heimlich zu einer kleinen Kirchengemeinde organisiert. Von dort aus bekehrt diese Gemeinde andere, wird immer größer und beschützt ihre Mitglieder.;;Los fieles han organizado en secreto una pequeña comunidad de culto en esta provincia. Desde ahí convierte a otros, crece y protege a los suyos.;;;;;;;;;x
+secret_religious_society_buddhist_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;;;;;;x
+secret_religious_society_buddhist_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;;;;;;x
+secret_religious_society_buddhist_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;;;;;;x
+secret_religious_society_buddhist_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;;;;;;x
+secret_religious_society_buddhist_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;;;;;;x
+secret_religious_society_buddhist_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;;;;;;x
+secret_religious_society_buddhist_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;;;;;;x
+secret_religious_society_buddhist_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;;;;;;x
+secret_religious_society_buddhist_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_buddhist_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Animist,,,,,,,
+secret_religious_society_animist;[GetReligiousCommunityName_animist];[GetReligiousCommunityName_animist];[GetReligiousCommunityName_animist];;[GetReligiousCommunityName_animist];;;;;;;;;x
+secret_religious_society_animist_desc;[GetReligiousSocietyDesc_animist];[GetReligiousSocietyDesc_animist];[GetReligiousSocietyDesc_animist];;[GetReligiousSocietyDesc_animist];;;;;;;;;x
+secret_religious_society_REAL_animist;The Followers of Animism;;;;;;;;;;;;;x
+secret_religious_society_animist_desc_REAL;Followers of Animism revere nature, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_animist_community;Secret [animist.GetName] Community;Communauté [animist.GetName] secrète;Geheime Gemeinschaft: [animist.GetName];;Comunidad Secreta: [animist.GetName];;;;;;;;;x
+secret_animist_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_animist_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_animist_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_animist_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_animist_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_animist_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_animist_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_animist_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_animist_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_animist_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_animist_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Baihu,,,,,,,
+secret_religious_society_baihu;[GetReligiousCommunityName_baihu];[GetReligiousCommunityName_baihu];[GetReligiousCommunityName_baihu];;[GetReligiousCommunityName_baihu];;;;;;;;;x
+secret_religious_society_baihu_desc;[GetReligiousSocietyDesc_baihu];[GetReligiousSocietyDesc_baihu];[GetReligiousSocietyDesc_baihu];;[GetReligiousSocietyDesc_baihu];;;;;;;;;x
+secret_religious_society_REAL_baihu;The Followers of Baihu;;;;;;;;;;;;;x
+secret_religious_society_baihu_desc_REAL;Followers of Baihu revere the White Tiger, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_baihu_community;Secret [baihu.GetName] Community;Communauté [baihu.GetName] secrète;Geheime Gemeinschaft: [baihu.GetName];;Comunidad Secreta: [baihu.GetName];;;;;;;;;x
+secret_baihu_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_baihu_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_baihu_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_baihu_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_baihu_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_baihu_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_baihu_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_baihu_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_baihu_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_baihu_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_baihu_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Baima,,,,,,,
+secret_religious_society_baima;[GetReligiousCommunityName_baima];[GetReligiousCommunityName_baima];[GetReligiousCommunityName_baima];;[GetReligiousCommunityName_baima];;;;;;;;;x
+secret_religious_society_baima_desc;[GetReligiousSocietyDesc_baima];[GetReligiousSocietyDesc_baima];[GetReligiousSocietyDesc_baima];;[GetReligiousSocietyDesc_baima];;;;;;;;;x
+secret_religious_society_REAL_baima;The Followers of Baima;;;;;;;;;;;;;x
+secret_religious_society_baima_desc_REAL;Followers of Baima revere the White Horse, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_baima_community;Secret [baima.GetName] Community;Communauté [baima.GetName] secrète;Geheime Gemeinschaft: [baima.GetName];;Comunidad Secreta: [baima.GetName];;;;;;;;;x
+secret_baima_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_baima_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_baima_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_baima_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_baima_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_baima_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_baima_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_baima_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_baima_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_baima_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_baima_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Baishi,,,,,,,
+secret_religious_society_baishi;[GetReligiousCommunityName_baishi];[GetReligiousCommunityName_baishi];[GetReligiousCommunityName_baishi];;[GetReligiousCommunityName_baishi];;;;;;;;;x
+secret_religious_society_baishi_desc;[GetReligiousSocietyDesc_baishi];[GetReligiousSocietyDesc_baishi];[GetReligiousSocietyDesc_baishi];;[GetReligiousSocietyDesc_baishi];;;;;;;;;x
+secret_religious_society_REAL_baishi;The Followers of Baishi;;;;;;;;;;;;;x
+secret_religious_society_baishi_desc_REAL;Followers of Baishi revere the White Stone, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_baishi_community;Secret [baishi.GetName] Community;Communauté [baishi.GetName] secrète;Geheime Gemeinschaft: [baishi.GetName];;Comunidad Secreta: [baishi.GetName];;;;;;;;;x
+secret_baishi_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_baishi_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_baishi_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_baishi_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_baishi_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_baishi_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_baishi_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_baishi_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_baishi_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_baishi_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_baishi_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Huojiao,,,,,,,
+secret_religious_society_huojiao;[GetReligiousCommunityName_huojiao];[GetReligiousCommunityName_huojiao];[GetReligiousCommunityName_huojiao];;[GetReligiousCommunityName_huojiao];;;;;;;;;x
+secret_religious_society_huojiao_desc;[GetReligiousSocietyDesc_huojiao];[GetReligiousSocietyDesc_huojiao];[GetReligiousSocietyDesc_huojiao];;[GetReligiousSocietyDesc_huojiao];;;;;;;;;x
+secret_religious_society_REAL_huojiao;The Followers of Huojiao;;;;;;;;;;;;;x
+secret_religious_society_huojiao_desc_REAL;Followers of Huojiao revere the Way of Fire, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_huojiao_community;Secret [huojiao.GetName] Community;Communauté [huojiao.GetName] secrète;Geheime Gemeinschaft: [huojiao.GetName];;Comunidad Secreta: [huojiao.GetName];;;;;;;;;x
+secret_huojiao_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_huojiao_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_huojiao_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_huojiao_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_huojiao_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_huojiao_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_huojiao_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_huojiao_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_huojiao_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_huojiao_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_huojiao_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Shamanist,,,,,,,
+secret_religious_society_shamanist;[GetReligiousCommunityName_shamanist];[GetReligiousCommunityName_shamanist];[GetReligiousCommunityName_shamanist];;[GetReligiousCommunityName_shamanist];;;;;;;;;x
+secret_religious_society_shamanist_desc;[GetReligiousSocietyDesc_shamanist];[GetReligiousSocietyDesc_shamanist];[GetReligiousSocietyDesc_shamanist];;[GetReligiousSocietyDesc_shamanist];;;;;;;;;x
+secret_religious_society_REAL_shamanist;The Followers of Shamanism;;;;;;;;;;;;;x
+secret_religious_society_shamanist_desc_REAL;Followers of Shamanism revere nature, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_shamanist_community;Secret [shamanist.GetName] Community;Communauté [shamanist.GetName] secrète;Geheime Gemeinschaft: [shamanist.GetName];;Comunidad Secreta: [shamanist.GetName];;;;;;;;;x
+secret_shamanist_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_shamanist_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_shamanist_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_shamanist_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_shamanist_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_shamanist_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_shamanist_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_shamanist_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_shamanist_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_shamanist_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_shamanist_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Shinto,,,,,,,
+secret_religious_society_shinto;[GetReligiousCommunityName_shinto];[GetReligiousCommunityName_shinto];[GetReligiousCommunityName_shinto];;[GetReligiousCommunityName_shinto];;;;;;;;;x
+secret_religious_society_shinto_desc;[GetReligiousSocietyDesc_shinto];[GetReligiousSocietyDesc_shinto];[GetReligiousSocietyDesc_shinto];;[GetReligiousSocietyDesc_shinto];;;;;;;;;x
+secret_religious_society_REAL_shinto;The Followers of Shinto;;;;;;;;;;;;;x
+secret_religious_society_shinto_desc_REAL;Followers of Shinto revere nature, the underlying natural order of the Universe – the active expression of Tao for an individual is Te, the inner virtue. Adherents seek to strengthen their Te and prepare for the day they no longer need to stay hidden.;;;;;;;;;;;;;x
+secret_shinto_community;Secret [shinto.GetName] Community;Communauté [shinto.GetName] secrète;Geheime Gemeinschaft: [shinto.GetName];;Comunidad Secreta: [shinto.GetName];;;;;;;;;x
+secret_shinto_community_desc;In secret, the faithful have organized around a small community in this province. From there it converts others, grows, and protects their own.;;;;;;;;;;;;;x
+secret_religious_society_shinto_rank_1_female;Faithful;;;;;;;;;;;;;x
+secret_religious_society_shinto_rank_2_female;Adherent;;;;;;;;;;;;;x
+secret_religious_society_shinto_rank_3_female;Preacher;;;;;;;;;;;;;x
+secret_religious_society_shinto_rank_4_female;Herald;;;;;;;;;;;;;x
+secret_religious_society_shinto_rank_1_male;Faithful;;;;;;;;;;;;;x
+secret_religious_society_shinto_rank_2_male;Adherent;;;;;;;;;;;;;x
+secret_religious_society_shinto_rank_3_male;Preacher;;;;;;;;;;;;;x
+secret_religious_society_shinto_rank_4_male;Herald;;;;;;;;;;;;;x
+secret_religious_society_shinto_currency;Devotion;;;;;;;;;;;;;x
+secret_religious_society_shinto_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x
+#Tengri Pagan,,,,,,,
+secret_religious_society_tengri_pagan;[GetReligiousCommunityName_tengri_pagan];[GetReligiousCommunityName_tengri_pagan];[GetReligiousCommunityName_tengri_pagan];;[GetReligiousCommunityName_tengri_pagan];;;;;;;;;x
+secret_religious_society_tengri_pagan_desc;[GetReligiousSocietyDesc_tengri_pagan];[GetReligiousSocietyDesc_tengri_pagan];[GetReligiousSocietyDesc_tengri_pagan];;[GetReligiousSocietyDesc_tengri_pagan];;;;;;;;;x
+secret_religious_society_REAL_tengri_pagan;The Arrows of Tengri;Flèches de Tengri;die Pfeile von Tengri;;las flechas de Tengri;;;;;;;;;x
+secret_religious_society_tengri_pagan_desc_REAL;No matter how far you travel, and no matter what unbelievers say, you are always under the Heavenly Father, and standing upon the Earth Mother. This is how the followers of Tengri can be so certain in their faith that they follow it even in the face of persecution. All they have to do to prove their faith is to lift their eyes towards Tengri of the Blue Sky above, feel the protection nature provides, and let their Wind Horses ride in prayer to a better place.;Peu importe la distance à laquelle vous voyagez, et peu importe ce que les incrédules disent, vous êtes toujours en dessous du Père céleste, et au-dessus de la Terre Mère. C'est ainsi que les adeptes de Tengri peuvent être si assurés dans leur foi, au point de la suivre même lorsqu'ils sont persécutés. Tout ce qu'ils ont à faire pour prouver leur foi est de lever les yeux vers Tengri du ciel bleu, sentir la protection que la nature leur fournit, et laisser leurs Chevaux du Vent les conduire, par la prière, vers un monde meilleur.;Ganz gleich, wie weit sie reisen und was die Ungläubigen sagen, sind sie immer unter dem Himmelsvater und stehen auf der Mutter Erde. Daher können die Anhänger von Tengri so stark von ihrem Glauben überzeugt sein, dass sie selbst angesichts einer Verfolgung an ihm festhalten. Um ihren Glauben zu beweisen, brauchen sie lediglich den Blick auf Tengri, den blauen Himmel, zu richten, den Schutz zu spüren, den die Natur bietet, und ihre Windpferde im Gebet an einen besseren Ort reiten zu lassen.;;No importa cuán lejos hayas viajado, ni lo que digan los paganos: siempre estarás bajo el Padre Celestial y sobre la Madre Tierra. Así es cómo los seguidores de Tengri están tan seguros sobre la fe que siguen, aun cuando son perseguidos. Todo lo que deben hacer para demostrar su fe es alzar la vista hacia Tengri, allá en el cielo azul, sentir la protección que les brinda la naturaleza y dejar que sus caballos del viento cabalguen en sus oraciones por un lugar mejor.;;;;;;;;;x
+secret_tengri_pagan_community;Secret [tengri_pagan.GetName] Community;Communauté [tengri_pagan.GetName] secrète;Geheime Gemeinschaft: [tengri_pagan.GetName];;Comunidad Secreta: [tengri_pagan.GetName];;;;;;;;;x
+secret_tengri_pagan_community_desc;In secret, the faithful have organized around a small church community in this province. From there it converts others, grows, and protects their own.;Des fidèles ont secrètement formé une communauté dans cette province. Ils y convertissent les autres personnes et protègent les leurs.;In dieser Provinz haben sich Gläubige heimlich zu einer kleinen Kirchengemeinde organisiert. Von dort aus bekehrt diese Gemeinde andere, wird immer größer und beschützt ihre Mitglieder.;;Los fieles han organizado en secreto una pequeña comunidad de culto en esta provincia. Desde ahí convierte a otros, crece y protege a los suyos.;;;;;;;;;x
+secret_religious_society_tengri_pagan_rank_1_female;Faithful;Fidèle;Gläubige;;Fiel;;;;;;;;;x
+secret_religious_society_tengri_pagan_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;;;;;;x
+secret_religious_society_tengri_pagan_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;;;;;;x
+secret_religious_society_tengri_pagan_rank_4_female;Herald;Messagère;Heroldin;;Mensajera;;;;;;;;;x
+secret_religious_society_tengri_pagan_rank_1_male;Faithful;Fidèle;Gläubiger;;Fiel;;;;;;;;;x
+secret_religious_society_tengri_pagan_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;;;;;;x
+secret_religious_society_tengri_pagan_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;;;;;;x
+secret_religious_society_tengri_pagan_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;;;;;;x
+secret_religious_society_tengri_pagan_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
+secret_religious_society_tengri_pagan_leader_desc;[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];[GetSocietyLeaderDesc];;[GetSocietyLeaderDesc];;;;;;;;;x

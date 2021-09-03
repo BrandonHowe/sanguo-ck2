@@ -1,0 +1,19 @@
+# c_beixincheng
+
+# County Title
+title = c_beixincheng
+
+# Settlements
+max_settlements = 4
+
+b_beixincheng = castle
+b_fanyuting = city
+#b_jinghanfu = temple
+#b_duzhuo = castle
+
+# Misc
+culture = han
+religion = confucian
+terrain = hills
+
+#History

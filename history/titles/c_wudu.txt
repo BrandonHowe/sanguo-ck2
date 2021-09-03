@@ -1,0 +1,32 @@
+# e_china
+1.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1.1.1={
+	liege=d_wudu
+}
+140.1.1={
+	holder=844 #Ma Rong
+}
+144.1.1={
+	holder=0 #None
+}
+184.1.1={
+	liege=0 #Independent
+	holder=1706 #Agui
+}
+190.1.1={
+	set_tribute_suzerain={ who=k_five percentage=0.25 }
+}
+214.11.1={
+	liege=d_wudu
+	clear_tribute_suzerain=k_five
+	holder=3872 #Su Ze
+}
+215.12.1={
+	holder=406 #Granted to Xiahou Yuan
+}
+219.6.1={
+	holder=4197 #Random
+}

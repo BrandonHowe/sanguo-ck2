@@ -1,0 +1,549 @@
+###########################################
+#                                         #
+# Dynasty Events						  #
+#                                         #
+# ID DYN.11-DYN.100		             	  #
+#                                         #
+#                                         #
+#                                         #
+#                                         #
+#                                         #
+#                                         #
+#                                         #
+###########################################
+
+namespace = DYN
+
+### NEW DYNASTY ###
+character_event = {
+	id = DYN.11
+	desc = EVTDESC_DYN.11
+	title = EVTTITLE_DYN.11
+	picture = GFX_evt_throne_room_byzantine
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROMFROM
+			modifier = opinion_ennobled
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				wealth = -250
+			}
+			create_title = {
+				tier = DUKE
+				landless = yes
+				temporary = no
+				custom_created = yes
+				culture = ROOT
+				holder = ROOT
+				base_title = THIS
+				ruler = "MARK"
+				foa = "PREMIER_FOA"
+			}
+			new_title = {
+				set_title_flag = noble_mark
+				make_primary_title = yes
+			}
+		}
+		
+		add_character_modifier = {
+			name = nobility_accepted
+			duration = 365
+		}
+		
+		tooltip = {
+			add_favor = FROMFROM
+		}
+		
+		custom_tooltip = { text = TOOLTIPmake_mark }
+		chronicle = {
+			entry = CHRONICLE_MADE_MARK
+			portrait = [Root.GetID]
+		}
+		
+		FROMFROM = { character_event={ id=DYN.15 } }
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2.0
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2.0
+				trait = proud
+			}
+		}
+	}
+	
+	option = {
+		name = REFUSE
+		
+		add_character_modifier = {
+			name = nobility_refused
+			duration = 365
+		}
+		
+		prestige = -50
+		piety = 150
+		
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { trait = humble } }
+				random_list = {
+					50 = { }
+					50 = {
+						add_trait = humble
+						character_event = { id = 38260 }
+					}
+				}
+			}
+		
+			FROMFROM = { character_event={ id=DYN.16 } }
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.5 # Less likely to do it
+			}
+			modifier = {
+				factor = 2.0
+				trait = content
+			}
+			modifier = {
+				factor = 2.0
+				trait = humble
+			}
+			modifier = {
+				factor = 2.0
+				trait = shy
+			}
+		}
+	}
+}
+
+character_event = {
+	id = DYN.12
+	desc = EVTDESC_DYN.12
+	title = EVTTITLE_DYN.12
+	picture = GFX_evt_throne_room_byzantine
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROMFROM
+			modifier = opinion_ennobled
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				wealth = -500
+			}
+			create_title = {
+				tier = DUKE
+				landless = yes
+				temporary = no
+				custom_created = yes
+				culture = ROOT
+				holder = ROOT
+				base_title = THIS
+				ruler = "DUKE"
+				foa = "PREMIER_FOA"
+			}
+			new_title = {
+				set_title_flag = noble_duke
+				make_primary_title = yes
+			}
+		
+			any_demesne_title = {
+				limit = {
+					has_title_flag = noble_mark
+				}
+				activate_title = { title = THIS status = no }
+				unsafe_destroy_landed_title = THIS
+			}
+		}
+		
+		add_character_modifier = {
+			name = nobility_accepted
+			duration = 365
+		}
+		
+		tooltip = {
+			add_favor = FROMFROM
+		}
+		
+		custom_tooltip = { text = TOOLTIPmake_duke }
+		chronicle = {
+			entry = CHRONICLE_MADE_DUKE
+			portrait = [Root.GetID]
+		}
+		
+		FROMFROM = { character_event={ id=DYN.15 } }
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2.0
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2.0
+				trait = proud
+			}
+		}
+	}
+	
+	option = {
+		name = REFUSE
+		
+		add_character_modifier = {
+			name = nobility_refused
+			duration = 365
+		}
+		
+		prestige = -150
+		piety = 450
+		
+		hidden_tooltip = {
+			random_list = {
+				40 = { }
+				30 = {
+					if = {
+						limit = { NOT = { trait = content } }
+						add_trait = content
+						character_event = { id = 38279 }
+					}
+				}
+				30 = {
+					if = {
+						limit = { NOT = { trait = humble } }
+						add_trait = humble
+						character_event = { id = 38260 }
+					}
+				}
+			}
+		
+			FROMFROM = { character_event={ id=DYN.16 } }
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.5 # Less likely to do it
+			}
+			modifier = {
+				factor = 2.0
+				trait = content
+			}
+			modifier = {
+				factor = 2.0
+				trait = humble
+			}
+			modifier = {
+				factor = 2.0
+				trait = shy
+			}
+		}
+	}
+}
+
+character_event = {
+	id = DYN.13
+	desc = EVTDESC_DYN.13
+	title = EVTTITLE_DYN.13
+	picture = GFX_evt_throne_room_byzantine
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROMFROM
+			modifier = opinion_ennobled
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				wealth = -1000
+			}
+			create_title = {
+				tier = KING
+				landless = yes
+				temporary = no
+				custom_created = yes
+				culture = ROOT
+				holder = ROOT
+				base_title = THIS
+				ruler = "KING"
+				foa = "PREMIER_FOA"
+			}
+			new_title = {
+				set_title_flag = noble_king
+				make_primary_title = yes
+			}
+		
+			any_demesne_title = {
+				limit = {
+					OR = {
+						has_title_flag = noble_mark
+						has_title_flag = noble_duke
+					}
+				}
+				activate_title = { title = THIS status = no }
+				unsafe_destroy_landed_title = THIS
+			}
+			
+			set_defacto_liege = FROMFROM
+		}
+		
+		add_character_modifier = {
+			name = nobility_accepted
+			duration = 365
+		}
+		
+		tooltip = {
+			add_favor = FROMFROM
+		}
+		
+		custom_tooltip = { text = TOOLTIPmake_king }
+		chronicle = {
+			entry = CHRONICLE_MADE_KING
+			portrait = [Root.GetID]
+		}
+		
+		FROMFROM = { character_event={ id=DYN.15 } }
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2.0
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2.0
+				trait = proud
+			}
+		}
+	}
+	
+	option = {
+		name = REFUSE
+		
+		add_character_modifier = {
+			name = nobility_refused
+			duration = 365
+		}
+		
+		prestige = -300
+		piety = 900
+		
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { trait = humble } }
+				random_list = {
+					50 = { }
+					50 = {
+						add_trait = humble
+						character_event = { id = 38260 }
+					}
+				}
+			}
+		
+			FROMFROM = { character_event={ id=DYN.16 } }
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.5 # Less likely to do it
+			}
+			modifier = {
+				factor = 2.0
+				trait = content
+			}
+			modifier = {
+				factor = 2.0
+				trait = humble
+			}
+			modifier = {
+				factor = 2.0
+				trait = shy
+			}
+		}
+	}
+}
+
+character_event = {
+	id = DYN.14
+	desc = EVTDESC_DYN.14
+	title = EVTTITLE_DYN.14
+	picture = GFX_evt_throne_room_byzantine
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		opinion = {
+			who = FROMFROM
+			modifier = opinion_ennobled
+		}
+	}
+	
+	option = {
+		name = EXCELLENT
+		
+		hidden_tooltip = {
+			FROMFROM = {
+				prestige = -1000
+			}
+			###
+			set_character_flag = founded_empire
+			primary_title = {
+				add_law = imperial_administration
+			}
+			k_confucian = {
+				holder_scope = {
+					abdicate_to = ROOT
+				}
+			}
+			character_event = { id = DYN.1 }
+			if = {
+				limit = { NOT = { religion = confucian } }
+				any_realm_lord = {
+					limit = { religion = confucian }
+					ROOT = {
+						character_event = { id = EMP.9 }
+					}
+				}
+			}
+			
+			custom_tooltip = { text = TOOLTIPmake_emp }
+			chronicle = {
+				entry = CHRONICLE_MADE_EMP
+				portrait = [Root.GetID]
+			}
+			
+			any_demesne_title = {
+				limit = {
+					OR = {
+						has_title_flag = noble_mark
+						has_title_flag = noble_duke
+						has_title_flag = noble_king
+						has_title_flag = warlord_flag
+					}
+				}
+				activate_title = { title = THIS status = no }
+				unsafe_destroy_landed_title = THIS
+			}
+		
+			FROMFROM = { character_event={ id=DYN.15 } }
+		}
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2.0
+				trait = ambitious
+			}
+			modifier = {
+				factor = 2.0
+				trait = proud
+			}
+		}
+	}
+	
+	option = {
+		name = REFUSE
+		
+		add_character_modifier = {
+			name = nobility_refused
+			duration = 365
+		}
+		
+		prestige = -500
+		piety = 1500
+		
+		hidden_tooltip = {
+			if = {
+				limit = { NOT = { trait = humble } }
+				random_list = {
+					50 = { }
+					50 = {
+						add_trait = humble
+						character_event = { id = 38260 }
+					}
+				}
+			}
+		
+			FROMFROM = { character_event={ id=DYN.16 } }
+		}
+		
+		ai_chance = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.5 # Less likely to do it
+			}
+			modifier = {
+				factor = 2.0
+				trait = content
+			}
+			modifier = {
+				factor = 2.0
+				trait = humble
+			}
+			modifier = {
+				factor = 2.0
+				trait = shy
+			}
+		}
+	}
+}
+
+# Title Accepted
+character_event = {
+	id = DYN.15
+	desc = EVTDESC_DYN.15
+	title = EVTTITLE_DYN.15
+	picture = GFX_evt_throne_room_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OK
+	}
+}
+
+# Title Refused
+character_event = {
+	id = DYN.16
+	desc = EVTDESC_DYN.16
+	title = EVTTITLE_DYN.16
+	picture = GFX_evt_throne_room_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = OH
+	}
+}

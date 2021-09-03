@@ -1,0 +1,22 @@
+# c_zhi
+
+# County Title
+title = c_zhi
+
+# Settlements
+max_settlements = 4
+
+b_zhi = castle
+b_huangyou = city
+#b_jinghou = temple
+#b_aicheng = castle
+
+# Misc
+culture = bandunman
+religion = baihu
+terrain = mountain
+
+#History
+190.1.1={
+	religion=tianshi
+}

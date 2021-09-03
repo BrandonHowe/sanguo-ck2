@@ -1,0 +1,18 @@
+# c_bukokjeo
+
+# County Title
+title = c_bukokjeo
+
+# Settlements
+max_settlements = 3
+
+b_bukokjeo = tribal
+#b_yodongsung = city
+#b_riwon = temple
+
+# Misc
+culture = joseon
+religion = shamanist
+terrain = hills
+
+#History

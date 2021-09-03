@@ -1,0 +1,18 @@
+# c_xiongnuxi
+
+# County Title
+title = c_xiongnuxi
+
+# Settlements
+max_settlements = 3
+
+b_xiongnuxi = tribal
+b_xiongnujiao = temple
+#b_xiongnufu = temple
+
+# Misc
+culture = xiongnu
+religion = tengri_pagan
+terrain = desert
+
+#History

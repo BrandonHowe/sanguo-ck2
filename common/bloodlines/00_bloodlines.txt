@@ -1,0 +1,185 @@
+######################
+# Sanguo Bloodlines
+######################
+
+go_chumo = {
+	shamanist_opinion = 5
+	monthly_character_prestige = 0.2
+	command_modifier = {
+		morale_defence = 0.05
+	}
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
+}
+
+kong_fuzi = {
+	confucian_opinion = 10
+	monthly_character_prestige = 0.1
+	monthly_character_piety = 0.1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
+}
+
+kushan_kujula = {
+	buddhist_religion_opinion = 5
+	war_elephants_morale = 0.05
+	monthly_character_prestige = 0.2
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
+}
+
+li_laozi = {
+	tao_opinion = 5
+	monthly_character_prestige = 0.1
+	command_modifier = {
+		religious_enemy = 0.05
+	}
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
+}
+
+liu_bang = {
+	chinese_religion_opinion = 5
+	vassal_opinion = 5
+	monthly_character_prestige = 0.2
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline bloodline_heroes }
+}
+
+ma_yuan = {
+	combat_rating = 5
+	baishi_opinion = 10
+	command_modifier = {
+		damage = 0.1
+	}
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
+}
+
+sun_zi = {
+	monthly_character_prestige = 0.1
+	command_modifier = {
+		morale_offence = 0.05
+	}
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline }
+}
+
+yuan_an = {
+	confucian_opinion = 5
+	tengri_pagan_opinion = 5
+	monthly_character_prestige = 0.2
+	bloodline_effect_bloodline_mercenary_traditions = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_placeholder_symbol
+	flags = { historical_bloodline bloodline_mercenary_traditions }
+}
+
+great_conqueror_male = {
+	combat_rating = 10
+	monthly_character_prestige = 0.25
+	vassal_opinion = 5
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { bloodline_heroes }
+}
+
+great_conqueror_female = {
+	combat_rating = 10
+	monthly_character_prestige = 0.25
+	vassal_opinion = 5
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = matrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { bloodline_heroes }
+}
+
+random_world_bloodline_male_1 = {
+	combat_rating = 5
+	monthly_character_prestige = 0.25
+	vassal_opinion = 5
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { bloodline_heroes }
+}
+
+random_world_bloodline_female_1 = {
+	combat_rating = 5
+	monthly_character_prestige = 0.25
+	vassal_opinion = 5
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = matrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_lion
+	flags = { bloodline_heroes }
+}
+
+random_world_bloodline_male_2 = {
+	combat_rating = 15
+	monthly_character_prestige = 0.25
+	vassal_opinion = 2
+	bloodline_effect_sky_burial = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_generic_hero
+	flags = { bloodline_sky_burial }
+}
+
+random_world_bloodline_female_2 = {
+	combat_rating = 15
+	monthly_character_prestige = 0.25
+	vassal_opinion = 2
+	bloodline_effect_sky_burial = 1
+	inheritance = matrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_generic_hero
+	flags = { bloodline_sky_burial }
+}
+
+random_world_bloodline_male_3 = {
+	fertility = 0.25
+	sex_appeal_opinion = 20
+	monthly_character_prestige = 0.25
+	vassal_opinion = 2
+	bloodline_effect_free_legitimize = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_midgard
+	flags = { bloodline_legitimize }
+}
+
+random_world_bloodline_female_3 = {
+	fertility = 0.25
+	sex_appeal_opinion = 20
+	monthly_character_prestige = 0.25
+	vassal_opinion = 2
+	bloodline_effect_free_legitimize = 1
+	inheritance = matrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_midgard
+	flags = { bloodline_legitimize }
+}
+

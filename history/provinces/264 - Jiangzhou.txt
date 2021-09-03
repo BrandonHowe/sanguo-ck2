@@ -1,0 +1,21 @@
+# c_jiangzhou
+
+# County Title
+title = c_jiangzhou
+
+# Settlements
+max_settlements = 6
+
+b_jiangzhou = castle
+b_badong = city
+b_hanning = city
+#b_luomi = castle
+#b_jiangbei = city
+#b_jiulong = temple
+
+# Misc
+culture = bandunman
+religion = baihu
+terrain = mountain
+
+#History

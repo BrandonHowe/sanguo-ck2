@@ -1,0 +1,17 @@
+# e_china
+1.1.1={
+	law = agnatic_succession
+	law = succ_gavelkind
+}
+1.1.1={
+	liege=d_taiyuan
+}
+180.1.1={
+	holder=3741 #Zang Min
+}
+185.12.1={
+	holder=20442 #Pei Mao
+}
+189.9.1={
+	holder=1340 #Shih Dongjie
+}

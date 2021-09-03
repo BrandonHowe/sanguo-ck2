@@ -1,0 +1,200 @@
+yue = {
+	graphical_cultures = { koreangfx turkishgfx easterngfx }
+	
+	minyue = {
+		graphical_cultures = { koreangfx turkishgfx easterngfx }
+		
+		color = { 0.5 0.2 0.5 }
+		
+		dynasty_name_first = yes
+		
+		male_names = {
+			An
+			Bo Bopi Bu Bushou
+			Chai Chu Chuwu Chuwuyu Chuyu Cou
+			Fa Fan Fanli Fu Fuchai Futan
+			Gou Goujian
+			Hong Hou Hui
+			Ji Jian
+			Li Liao Lu Luying
+			Mang Mangan Meng Mingdi
+			Peng Pengtong Pi
+			Qi Qiang
+			Rui
+			She Shi Shiyu Shou Shoumeng Si
+			Ta Tai Taibo Tan Tanzhi Tanzhumao Tong
+			Wei Wen Weng Wenzhong Wu Wuqiang Wurei
+			Wuren Wushen Wuyu Wuzixi Wuzhu Wuzhuan
+			Yan Yao Ye Yi Ying Yiwei You Yu Yuenu
+			Yugu Yuji Yumei Yun Yunchang Yushan Yuyi
+			Zhe Zheji Zhen Zhi Zhihou Zhizhou Zhong
+			Zhongyong Zhougou Zhouyu Zhu Zhuan
+			Zhuanzhu Zhufan Zhugou Zhumao Zhuqi Zixi
+		}
+		female_names = {
+			Ai Ailiao
+			Dongshi
+			Guang
+			Helu
+			Li Liao
+			Ji Jiguang
+			Shi
+			Xishi
+			Yiguang Yuenu
+			Zhen
+		}
+		
+		founder_named_dynasties = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 35
+		mat_grf_name_chance = 15
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 35
+		mat_grm_name_chance = 15
+		mother_name_chance = 25
+
+		modifier = default_culture_modifier
+		
+		allow_looting = yes
+	}
+	nanyue = {
+		graphical_cultures = { nanmangfx turkishgfx easterngfx }
+		
+		color = { 0.3 0.2 0.6 }
+		
+		dynasty_name_first = yes
+		
+		male_names = {
+			Ai An Anh
+			Ba Bach Banh Bao Bi Bian Bo Bon
+			Cai Cao Cha Chau Chi Chia Chu
+			Chuong Cong
+			Da Dai Dam Danh Dao Dat De Diep
+			Dinh Doan Du Duc Due Duong Duy
+			Duyang
+			Fudu
+			Gia Giang Giap
+			Ha Hai Han Hao Hien Hoa Hoang Hue
+			Hung Huy Hy
+			Jia Jing
+			Kha Khai Khanh Kien Kiet Kieu Kim
+			La Lac Lang Le Lian Liang Lien Lin
+			Linh Ling Loan Long Lu Luong
+			Ma Mach Mai Mat Minh Mo
+			Nam Nghiem Ngoc Nguyen Nhan Nhat
+			Nhi Nhuong
+			Phat Phi Pho Phu Phuc Phuoc Phung
+			Pian
+			Quach Quang Quy Quyen
+			Sach Shihui Shuhui
+			Ta Tam Tao Tau Te Thach Thai Thanh
+			Thao Thi Thien Thieu Thua Thuan
+			Thuc Thuy Tiao Tiaobian Tiaopian
+			Tiaowang Tien Tieu Tinh To Ton
+			Tong Tran Trang Trieu Trinh Truc
+			Truong Tu Tuan Tuc
+			Van Viet Vinh Vu Vuong
+			Xuong
+			Yingqi
+		}
+		female_names = {
+			Ai An Anh Au
+			Be Bian Bich Binh Bui
+			Cam Canh Cao Chau Chi Cong Cuc
+			Dao Diep Dinh Diu Doan Dong Duong
+			Gan Giang
+			Ha Hai Han Hang Hanh Hien Hoa
+			Hoang Hong Hue Hung Huong Huyen
+			Hyunh
+			Ket Khanh Kieu Kim
+			Lam Lan Lang Lanh Le Lien Lieu
+			Linh Loan Long Ly
+			Mai Minh My
+			Nam Nga Ngan Ngoc Ngon Ngu Nguyen
+			Nguyet Nhat Nhi Nhu Nhung Nien Nu
+			Oanh
+			Phuc Phuong
+			Quy Quyen Quynh
+			Sang Suong
+			Tam Tan Tham Thanh Thao Thi Thien
+			Thom Thu Thuan Thuy Tien Trac Tram
+			Trang Trinh Truc Tu Tuyen Tuyet
+			Uoc
+			Van Vi Viet Vy
+			Xuan
+			Yen
+		}
+		
+		founder_named_dynasties = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 35
+		mat_grf_name_chance = 15
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 35
+		mat_grm_name_chance = 15
+		mother_name_chance = 25
+
+		modifier = default_culture_modifier
+		
+		allow_looting = yes
+		seafarer = yes
+	}
+	shanyue = {
+		graphical_cultures = { koreangfx turkishgfx easterngfx }
+		
+		color = { 0.8 0.8 0.8 }
+		
+		dynasty_name_first = yes
+		
+		male_names = {
+			Baihu Bao Bo Bopo
+			Cha Chao Chia
+			Dahu Dawu
+			En
+			Fuwu
+			Gu Guan Guo
+			Lang Lin Longluo Lu
+			Ma
+			Pu
+			Rang Rao
+			Shan Shang She Shi
+			Tun
+			Yan Ye Yi Yu
+			Zhan Zhen Zhou
+		}
+		female_names = {
+			Ai Ailiao
+			Dongshi
+			Guang
+			Helu
+			Li Liao
+			Ji Jiguang
+			Shi
+			Xishi
+			Yiguang Yuenu
+			Zhen
+		}
+		
+		founder_named_dynasties = yes
+		
+		# Chance of male children being named after their paternal or maternal grandfather, or their father. Sum must not exceed 100.
+		pat_grf_name_chance = 35
+		mat_grf_name_chance = 15
+		father_name_chance = 25
+		
+		# Chance of female children being named after their paternal or maternal grandmother, or their mother. Sum must not exceed 100.
+		pat_grm_name_chance = 35
+		mat_grm_name_chance = 15
+		mother_name_chance = 25
+
+		modifier = default_culture_modifier
+		
+		allow_looting = yes
+	}
+}

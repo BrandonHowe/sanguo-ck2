@@ -1,0 +1,20 @@
+# c_shanyangyi
+
+# County Title
+title = c_shanyangyi
+
+# Settlements
+max_settlements = 5
+
+b_shanyangyi = castle
+b_shequanju = city
+#b_shangnan = city
+#b_danfeng = city
+#b_shancheng = city
+
+# Misc
+culture = han
+religion = confucian
+terrain = plains
+
+#History

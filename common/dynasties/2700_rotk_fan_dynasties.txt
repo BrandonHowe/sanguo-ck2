@@ -1,0 +1,22 @@
+#Dynasties for Randomly Generated Characters
+
+2700 = {
+	name="Long" #Long Wugui
+	culture = han
+}
+2701 = {
+	name="Wei" #Wei Yusheng
+	culture = han
+}
+2702 = {
+	name="Su" #Su Ranwu
+	culture = han
+}
+2703 = {
+	name="Dai" #Dai Meng
+	culture = han
+}
+2704 = {
+	name="Gong" #Gong Fang
+	culture = han
+}

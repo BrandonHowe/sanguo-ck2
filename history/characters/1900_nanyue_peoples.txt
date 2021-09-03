@@ -1,0 +1,128 @@
+1900={
+	name="Tien"
+	dynasty=326 #Ly
+	religion="confucian"
+	culture="nanyue"
+	155.1.1={
+		birth=yes
+	}
+	215.1.1={
+		death=yes
+	}
+}
+1901={
+	name="Lin"
+	dynasty=320 #Khu
+	religion="animist"
+	culture="nanyue"
+	110.1.1={
+		birth=yes
+	}
+	180.1.1={
+		death=yes
+	}
+}
+1902={
+	name="Lien"
+	dynasty=320 #Khu
+	religion="animist"
+	culture="nanyue"
+	father=1901
+	trait="genius"
+	trait="strong"
+	trait="ambitious"
+	trait="destined"
+	trait="temperate"
+	trait="diligent"
+	trait="robust"
+	trait="zealous"
+    trait="back_seat_leader"
+	trait="organizer"
+	trait="unyielding_leader"
+	trait="brilliant_strategist"
+	166.1.1={
+		birth=yes
+	}
+	184.1.1={
+		effect={
+			health=5
+		}
+	}
+	256.1.1={
+		death=yes
+	}
+}
+1903={
+	name="Thien"
+	dynasty=342 #Tinh
+	religion="animist"
+	culture="nanyue"
+	160.1.1={
+		birth=yes
+	}
+	240.1.1={
+		death=yes
+	}
+}
+1904={
+	name="Truc"
+	dynasty=310 #Dang
+	religion="animist"
+	culture="nanyue"
+	160.1.1={
+		birth=yes
+	}
+	240.1.1={
+		death=yes
+	}
+}
+1905={
+	name="Khanh"
+	female=yes
+	dynasty=348 #Vu
+	religion="animist"
+	culture="nanyue"
+	160.1.1={
+		birth=yes
+	}
+	240.1.1={
+		death=yes
+	}
+}
+1906={
+	name="Giap"
+	dynasty=331 #Nguyen
+	religion="animist"
+	culture="nanyue"
+	160.1.1={
+		birth=yes
+	}
+	240.1.1={
+		death=yes
+	}
+}
+1907={
+	name="Long"
+	dynasty=337 #Quy
+	religion="animist"
+	culture="nanyue"
+	160.1.1={
+		birth=yes
+	}
+	240.1.1={
+		death=yes
+	}
+}
+1908={
+	name="Tam"
+	female=yes
+	dynasty=314 #Duong
+	religion="animist"
+	culture="nanyue"
+	160.1.1={
+		birth=yes
+	}
+	240.1.1={
+		death=yes
+	}
+}
